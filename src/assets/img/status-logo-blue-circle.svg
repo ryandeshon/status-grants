@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="343px" height="343px" viewBox="0 0 343 343" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>status-logo-blue-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-193.000000, -1016.000000)">
+            <g id="status-logo-blue-circle" transform="translate(193.000000, 1016.000000)">
+                <circle id="bg" fill="#4360DF" cx="171.5" cy="171.5" r="171.5"></circle>
+                <path d="M145.612296,162.022727 C140.378922,161.99393 135.15361,162.433213 130,163.335227 C134.24035,125.014212 166.923827,95.997774 205.844918,96 C229.672944,96 246,107.398864 246,131 C246,154.601136 226.40432,166 197.813902,166 C176.708391,166 166.717807,162.022727 145.612296,162.022727 Z M146.186098,176 C167.291609,176 177.282193,179.977273 198.387704,179.977273 C203.621078,180.00607 208.84639,179.566787 214,178.664773 C209.75965,216.985788 177.076173,246.002226 138.155082,246 C114.327056,246 98,234.601136 98,211 C98,187.398864 117.59568,176 146.186098,176 Z" id="logo" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
