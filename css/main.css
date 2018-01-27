@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "PostGrotesk-Book";
+    src: url("/fonts/PostGrotesk/PostGrotesk-Book.woff") format("woff"),
+         url("/fonts/PostGrotesk/PostGrotesk-Book.ttf") format("ttf"),
+         url("/fonts/PostGrotesk/PostGrotesk-Book.svg") format("svg");
+}
+@font-face {
+    font-family: "PostGrotesk-Medium";
+    src: url("/fonts/PostGrotesk/PostGrotesk-Medium.woff") format("woff"),
+         url("/fonts/PostGrotesk/PostGrotesk-Medium.ttf") format("ttf"),
+         url("/fonts/PostGrotesk/PostGrotesk-Medium.svg") format("svg");
+}
+
+h1 {
+    font-family: 'PostGrotesk-Book', sans-serif;
+}
