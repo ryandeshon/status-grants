@@ -14,9 +14,12 @@
 
 html,
 body {
-    background-color: rgba(164,179,182,.20) !important;
+    background-color: #F5F7F6 !important;
     min-height: 100vh;
     font-family: "PostGrotesk-Book", sans-serif;
+    z-index: 1;
+    margin-bottom: 385px !important;
+    box-shadow: 0 0 30px 0 rgba(54, 69, 79, 0.86)
 }
 
 a {
@@ -392,12 +395,16 @@ a {
     align-items: center;
 }
 
+.question {
+    margin-bottom: 60px;
+}
 .question__block {
     padding: 0 !important;
     border-radius: 8px;
     background: #FFFFFF;
     border: 1px solid rgba(199,206,209,0.12);
     border-radius: 8px 8px 8px 8px 0;
+    margin-bottom: 2rem;
 }
 
 .question__block--heading {
@@ -451,7 +458,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 200px;
 }
 .terms__block--link {
     /* Terms and Conditions: */
@@ -461,4 +468,97 @@ a {
     letter-spacing: 0;
     line-height: 31px;
     text-decoration: underline;
+}
+
+.footer {
+    height: 385px;
+    padding: 40px;
+    background-color: #021c36;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.footer .row {
+    height: 100%;
+}
+
+.footer__left_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer__left_block--logo_container {
+    flex-grow: 1;
+    padding-top: 20px;
+}
+.footer__left_block--address {
+    opacity: 0.4;
+	font-family: PostGrotesk-Book, sans-serif;
+	font-size: 15px;
+	line-height: 1.67;
+	text-align: left;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__right_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.footer__right_block--header_container {
+    height: 40px;
+}
+
+.footer__right_block--header_text {
+    opacity: 0.6;
+	font-family: PostGrotesk-Book, sans-serif;
+	font-size: 15px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.footer__right_block--link {
+    font-family: PostGrotesk-Book, sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+	text-align: left;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    min-height: 32px;
+}
+
+.footer__right_block--link:hover {
+    color: #5CDB94;
+}
+.footer__right_block--link:active {
+    color: #5CDB94;
+}
+
+.footer__right_block--link span {
+    margin-left: 10px;
+}
+
+.footer__right_block--header_select {
+   background: transparent;
+   border: none;
+   color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background-image: url('../images/carat-sm.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
 }
