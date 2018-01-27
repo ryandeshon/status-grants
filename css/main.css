@@ -1,16 +1,120 @@
 @font-face {
     font-family: "PostGrotesk-Book";
-    src: url("/fonts/PostGrotesk/PostGrotesk-Book.woff") format("woff"),
-         url("/fonts/PostGrotesk/PostGrotesk-Book.ttf") format("ttf"),
-         url("/fonts/PostGrotesk/PostGrotesk-Book.svg") format("svg");
-}
-@font-face {
-    font-family: "PostGrotesk-Medium";
-    src: url("/fonts/PostGrotesk/PostGrotesk-Medium.woff") format("woff"),
-         url("/fonts/PostGrotesk/PostGrotesk-Medium.ttf") format("ttf"),
-         url("/fonts/PostGrotesk/PostGrotesk-Medium.svg") format("svg");
+    src: url("../fonts/PostGrotesk/PostGrotesk-Book.woff") format("woff"),
+         url("../fonts/PostGrotesk/PostGrotesk-Book.ttf") format("ttf"),
+         url("../fonts/PostGrotesk/PostGrotesk-Book.svg") format("svg");
 }
 
-h1 {
-    font-family: 'PostGrotesk-Book', sans-serif;
+@font-face {
+    font-family: "PostGrotesk-Medium";
+    src: url("../fonts/PostGrotesk/PostGrotesk-Medium.woff") format("woff"),
+         url("../fonts/PostGrotesk/PostGrotesk-Medium.ttf") format("ttf"),
+         url("../fonts/PostGrotesk/PostGrotesk-Medium.svg") format("svg");
+}
+
+html,
+body {
+    background-color: rgba(164,179,182,.20) !important;
+    min-height: 100vh;
+}
+
+.hero {
+    padding-top: 12px;
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+    z-index: 1;
+}
+.hero__row {
+    background-color: #7f44df;
+    background-image: url('../images/bg.svg');
+    background-repeat: repeat;
+    max-height: 700px;
+    height: 100vh;
+    border-radius: 8px;
+}
+
+.hero__contents {
+    margin-top: 100px;
+}
+
+.hero__contents .container,
+.hero__contents .row {
+    height: 100%;
+    padding-bottom: 50px;
+}
+.hero__contents .row {
+    justify-content: center;
+    align-items: center;
+}
+.hero__contents--text {
+    padding: 20px;
+}
+
+.hero__contents--image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero__contents .row .title {
+    max-width: 400px;
+    font-size: 26px;
+	font-weight: 500;
+	line-height: 1.19;
+	text-align: left;
+    color: #edf5e0;
+    font-family: "PostGrotesk-Medium", sans-serif;
+}
+.hero__contents--text .btn {
+    width: 220px;
+    border-radius: 8px;
+	background-color: #5cdb94;
+    border: solid 1px rgba(199, 206, 209, 0.12);
+    font-family: "PostGrotesk-Medium", sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.15;
+	letter-spacing: 1px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.hero__contents .row .description {
+    opacity: 0.75;
+	font-family: "PostGrotesk-Book", sans-serif;
+	font-size: 17px;
+	line-height: 1.41;
+	text-align: left;
+    color: #edf5e0;
+    max-width: 400px;
+}
+
+.hero__contents--slogan {
+    width: 100%;
+    font-family: PostGrotesk-Book, sans-serif;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 1.41;
+	text-align: left;
+    color: #c2c2c2;
+    margin: 1rem;
+
+}
+
+.cta {
+    margin-top: -100px;
+    margin-left: -20px;
+    margin-right: -20px;
+    min-height: 800px;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 16px 0 rgba(230, 235, 238, 0.67);
+}
+
+.cta__row {
+
+}
+
+.cta__contents {
+
 }

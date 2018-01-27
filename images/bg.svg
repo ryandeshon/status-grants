@@ -1,0 +1,13 @@
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <pattern id="pattern-1" width="20" height="20" x="-24" y="-24" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2"></use>
+        </pattern>
+        <image id="image-2" width="20" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAKxJREFUOBHt08ENwjAMBdDCCNzYhjUYgDF7ZwEmYAQGAD9aH1qRNpXCrV/6VRL//DiO23U7/lmBQ5jfgvfga6SxNbFNOIe6D74LFKOpgtPT7Bnja9BmNLbmIJqqTF3JBhtPwTmspSntKtSJoWxKEKOhXYUHIHbFEsRoaCc4TmYNJr8MH6PvZcE/Y6ldkA595jrNHqV520hf0bMXZTvnpsZmCDJt9ut9HfdPVQU+jxI4Afx0GVMAAAAASUVORK5CYII="></image>
+    </defs>
+    <g id="Page-1" stroke="44318d" stroke-width="1" fill="#44318d" fill-rule="evenodd" opacity="0.049999997">
+        <rect id="Rectangle-7" fill="url(#pattern-1)" style="mix-blend-mode: overlay;" x="-4" y="-4" width="20" height="20"></rect>
+    </g>
+</svg>
