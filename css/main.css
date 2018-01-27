@@ -219,14 +219,14 @@ body {
 
 .partnership {
     margin-top: 0;
-    padding-top: 0;
+    padding: 0;
     margin-left: -20px;
     margin-right: -20px;
     z-index: 2;
     background-color: #fff;
     border-radius: 0;
     box-shadow: 0 5px 0 0 rgba(230, 235, 238, 0.67);
-    height: 160px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +244,7 @@ body {
 .partnership__block--text {
     text-align: center;
     font-family: "PostGrotesk-Medium", sans-serif;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 500;
 	line-height: 1.67;
 	text-align: center;
@@ -252,5 +252,96 @@ body {
 }
 
 .partnership__block img {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.apply {
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    z-index: 2;
+    background-color: #F7F9FA;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 0 0 rgba(230, 235, 238, 0.67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.apply__block {
+    max-width: 520px !important;
+    text-align: center;
+}
+
+.apply__block--header {
+    font-family: "PostGrotesk-Medium", sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 1.24;
+	text-align: center;
+    color: #474866;
+    margin-bottom: 12px;
+}
+.apply__block--text {
+    opacity: 0.75;
+	font-size: 18px;
+	line-height: 1.39;
+	text-align: center;
+	color: #9d9d9d;
+}
+
+.research {
+    margin-top: 60px;
+}
+.research__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.research__header--text {
+    text-align: center;
+    font-family: "PostGrotesk-Medium", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 1.19;
+    color: #474866;
+    margin-bottom: 20px;
+}
+
+.research__options {
+    min-height: 200px;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+}
+.research__options--box {
+    min-width: 180px;
+    min-height: 200px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+	background-color: #ffffff;
+	box-shadow: 0 5px 16px 0 rgba(230, 235, 238, 0.67);
+}
+.research__options--icon {
+    margin-bottom: 20px;
+}
+.research__options--text {
+    font-family: "PostGrotesk-Medium", sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1.33;
+	text-align: center;
+    color: #494949;
+    margin: 0;
+    padding: 0;
 }

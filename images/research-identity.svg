@@ -1,0 +1,25 @@
+
+<svg width="81px" height="101px" viewBox="0 0 81 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="93.5" cy="74.5" r="33.5"></circle>
+        <filter x="-19.4%" y="-11.9%" width="138.8%" height="138.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.145125679 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GRANTS-SITE-Copy-6" transform="translate(-900.000000, -1865.000000)">
+            <g id="symbol-copy-2" transform="translate(847.000000, 1846.000000)">
+                <path d="M57.8273583,54.5798492 L57.8273583,36.7733976 C57.8273583,28.9345173 64.1820264,22.5798492 72.0209067,22.5798492 L72.0209067,22.5798492 C79.859787,22.5798492 86.2144551,28.9345173 86.2144551,36.7733976 L86.2144551,54.5798492" id="Rectangle-11" stroke="#44318D" stroke-width="6" stroke-linecap="round" transform="translate(72.020907, 38.579849) rotate(-30.000000) translate(-72.020907, -38.579849) "></path>
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#A4B3B6" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M96,76.418483 L96,88 L90,88 L90,76.418483 C87.0681697,75.2317082 85,72.3573776 85,69 C85,64.581722 88.581722,61 93,61 C97.418278,61 101,64.581722 101,69 C101,72.3573776 98.9318303,75.2317082 96,76.418483 Z" id="Combined-Shape" fill="#44318D" transform="translate(93.000000, 74.500000) rotate(-28.000000) translate(-93.000000, -74.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
