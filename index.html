@@ -23,7 +23,7 @@
     </head>
 
     <body>
-        <div class="container-fluid fixed-top navigation">
+        <div class="container-fluid fixed-top navigation navigation__background--top">
             <nav class="navbar">
                 <a class="navbar-brand" href="/">
                     <img class="navigation__logo" src="./images/nav-logo.svg" width="52" height="52" alt="Status Logo">
@@ -37,7 +37,7 @@
                 <a class="navigation__link navbar-text" href="#">Contact Us</a>
             </nav>
         </div>
-
+        <!-- Hero section -->
         <div class="container-fluid hero">
             <div class="row hero__row">
                 <div class="col-sm hero__contents">
@@ -45,7 +45,7 @@
                         <div class="row">
                             <div class="hero__contents--text col-sm">
                                 <h1 class="title">Fund your work on the blockchain</h1>
-                                <p class="description">Status R&D Grants funds individual researchers and teams developing protocol-layer tech for the decentralized Web—up to $150K USD available.</p>
+                                <p class="description">Status R&amp;D Grants funds individual researchers and teams developing protocol-layer tech for the decentralized Web—up to $150K USD available.</p>
                                 <button type="button" class="btn btn-primary">APPLY</button>
                             </div>
                             <div class="hero__contents--image col-sm">
@@ -57,42 +57,55 @@
                 </div>
             </div>
         </div>
+        <!-- End Hero Section -->
+        <!-- Call to action section -->
         <div class="container cta">
             <div class="row cta__row">
                 <div class="col-sm cta__contents">
-
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="cta__contents--block">
+                                    <h3 class="cta__contents--header">
+                                        Committed to a decentralized Web
+                                    </h3>
+                                    <p class="cta__contents--text">Blockchain-based decentralization is a movement transforming industries around the world—and Status wants to support talented computer science researchers developing protocol-level tech that’ll make it more useful to society.
+                                        <a href="#">Learn more about Status</a>
+                                    </p>
+                                </div>
+                                <div class="cta__contents--block">
+                                    <h3 class="cta__contents--header">
+                                         Help build the foundation
+                                    </h3>
+                                    <p class="cta__contents--text">The blockchain is reshaping expectations about how people, organizations, even governments, operate. But it’s still in its infancy. Scalability, security, and other challenges require more research and development by people like you. Our R&amp;D Grants are available to support your work making the benefits of the blockchain accessible to all. </p>
+                                </div>
+                                <div class="cta__contents--block">
+                                    <h3 class="cta__contents--calloutheader">Our R&D Grants are available to support your work making the benefits of the blockchain accessible to all.</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <img src="./images/lock.svg" alt="Lock and key">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+
+        <div class="container partnership">
             <div class="row">
                 <div class="col-sm">
-
+                    <hr class="partnership__line" />
                 </div>
             </div>
-        </div>
-        <div class="container form">
             <div class="row">
-                <div class="col-sm">
-
-                </div>
-            </div>
-        </div>
-        <div class="container faq">
-            <div class="row">
-                <div class="col-sm">
-
+                <div class="col-sm partnership__block">
+                    <strong>Partnership with:</strong>
+                    <img src="./images/ic3-logo.png" alt="ic3 Partnership Logo" />
                 </div>
             </div>
         </div>
 
-        <div class="container footer">
-            <div class="row">
-                <div class="col-sm">
-
-                </div>
-            </div>
-        </div>
 
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
