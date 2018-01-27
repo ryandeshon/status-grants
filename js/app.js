@@ -24,6 +24,7 @@
     }, 2000);
   })
 
+  // Toggle FAQ block open and closed
   $('.question__block').on('click', function (e) {
     var toggle = $(this).data('toggle')
     console.log(toggle)
@@ -40,6 +41,15 @@
       $('html, body').animate({
         scrollTop: $(this).offset().top - 200
       }, 1000);
+    }
+  })
+
+  $('.language-switcher').on('change', function (e) {
+    var selected = $(this).val()
+    if (selected === 'en') {
+      window.location.href = '/'
+    } else {
+      window.location.href = selected + '.html'
     }
   })
 })(jQuery);

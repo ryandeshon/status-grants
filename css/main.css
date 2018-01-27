@@ -27,6 +27,7 @@ a {
     font-size: 18px;
     color: #5CDB94;
     letter-spacing: 0;
+    text-decoration: none;
 }
 
 .navigation__background--scroll {
@@ -87,6 +88,10 @@ a {
 	text-align: center;
 	color: #ffffff;
 }
+.navigation__link:hover {
+    color: #5cdb94 !important;
+    text-decoration: none !important;
+}
 .hero {
     padding-top: 12px;
     padding-left: 28px !important;
@@ -118,6 +123,18 @@ a {
 .hero__contents--text {
     padding: 20px;
 }
+.hero__contents--text .apply-btn {
+
+}
+.hero__contents--text .apply-btn .btn:hover,
+.hero__contents--text .apply-btn .btn:active{
+    color: #5cdb94;
+    background-color: #fff;
+    transition: background-color 2s ease, color 1s ease;
+}
+
+
+
 .hero__contents--image {
     display: flex;
     justify-content: center;
@@ -210,7 +227,10 @@ a {
 	text-align: left;
 	color: #9d9d9d;
 }
-
+.cta__contents--link {
+    color: #5cdb94;
+    text-decoration: underline;
+}
 .cta__contents--calloutheader {
     font-family: "PostGrotesk-Medium", sans-serif;
 	font-size: 25px;
@@ -296,6 +316,7 @@ a {
     margin-bottom: 12px;
 }
 .apply__block--text {
+    font-family: "PostGrotesk-Book", sans-serif;
     opacity: 0.75;
 	font-size: 18px;
 	line-height: 1.39;
@@ -430,7 +451,6 @@ a {
     flex-grow: 1
 }
 .question__block--body {
-    margin: 0 30px;
     max-height: 380px;
     overflow: auto;
     display: none;
@@ -442,7 +462,7 @@ a {
     letter-spacing: 0;
     line-height: 25px;
     margin: 0;
-    padding: 2rem;
+    padding: 2rem 4rem;
     opacity: 0.8;
 }
 .flip {
@@ -467,6 +487,10 @@ a {
     color: #5CDB94;
     letter-spacing: 0;
     line-height: 31px;
+}
+.terms__block--link:hover,
+.terms__block--link:active {
+    color: #5CDB94 !important;
     text-decoration: underline;
 }
 
