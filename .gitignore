@@ -161,3 +161,6 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/sublimetext,node,linux,macos,windows
 
 .vscode
+
+# Ignore built files in dist
+dist/
