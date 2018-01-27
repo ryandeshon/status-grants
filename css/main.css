@@ -19,6 +19,13 @@ body {
     font-family: "PostGrotesk-Book", sans-serif;
 }
 
+a {
+    font-family: PostGrotesk-Medium, sans-serif;
+    font-size: 18px;
+    color: #5CDB94;
+    letter-spacing: 0;
+}
+
 .navigation__background--scroll {
     background-color: rgba(127,68,223, 0.85);
     background-image: url('../images/bg.svg');
@@ -344,4 +351,114 @@ body {
     color: #494949;
     margin: 0;
     padding: 0;
+}
+
+.form {
+    padding: 40px;
+}
+.form__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form__block--header {
+    font-family: "PostGrotesk-Medium", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 1.19;
+	text-align: center;
+    color: #474866;
+    margin-bottom: 1rem;
+}
+.form__block--text {
+    margin: 0;
+    padding: 0;
+    opacity: 0.75;
+	font-family: "PostGrotesk-Book", sans-serif;
+	font-size: 18px;
+	line-height: 1.39;
+	text-align: center;
+	color: #494949;
+}
+
+.faq {
+    padding: 60px;
+}
+
+.faq__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question__block {
+    padding: 0 !important;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid rgba(199,206,209,0.12);
+    border-radius: 8px 8px 8px 8px 0;
+}
+
+.question__block--heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    height: 45px;
+	background-color: #8265a7;
+    border: solid 1px rgba(199, 206, 209, 0.12);
+    cursor: pointer;
+}
+.question__block--heading_text {
+	font-family: PostGrotesk-Book, sans-serif;
+	font-size: 18px;
+	line-height: 0.83;
+	letter-spacing: 1px;
+	text-align: left;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1
+}
+.question__block--body {
+    margin: 0 30px;
+    max-height: 380px;
+    overflow: auto;
+    display: none;
+}
+.question__block--body_text {
+    font-family: PostGrotesk-Book, sans-serif;
+    font-size: 18px;
+    color: #4A4A4A !important;
+    letter-spacing: 0;
+    line-height: 25px;
+    margin: 0;
+    padding: 2rem;
+    opacity: 0.8;
+}
+.flip {
+    transform: rotate( -180deg );
+    transition: transform 150ms ease;
+}
+.flip-reverse {
+    transform: rotate( 0deg );
+    transition: transform 150ms ease;
+}
+
+.terms__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.terms__block--link {
+    /* Terms and Conditions: */
+    font-family: PostGrotesk-Medium, sans-serif;
+    font-size: 18px;
+    color: #5CDB94;
+    letter-spacing: 0;
+    line-height: 31px;
+    text-decoration: underline;
 }
