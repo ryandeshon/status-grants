@@ -13,14 +13,14 @@
   $('.apply-btn').on('click', function (e) {
     e.preventDefault()
     $('html, body').animate({
-      scrollTop: $("#apply").offset().top
+      scrollTop: $("#apply").offset().top - 100
     }, 2000);
   })
 
   $('.faq-btn').on('click', function (e) {
     e.preventDefault()
     $('html, body').animate({
-      scrollTop: $("#faq").offset().top
+      scrollTop: $("#faq").offset().top - 100
     }, 2000);
   })
 
