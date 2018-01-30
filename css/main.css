@@ -12,6 +12,10 @@
          url("../fonts/PostGrotesk/PostGrotesk-Medium.svg") format("svg");
 }
 
+.btn:hover {
+    border: none;
+}
+
 html,
 body {
     background-color: #F5F7F6 !important;
@@ -157,9 +161,9 @@ a {
     padding: 20px;
 }
 .hero__contents--text .apply-btn .btn:hover,
-.hero__contents--text .apply-btn .btn:active{
-    color: #5cdb94;
-    background-color: #fff;
+.hero__contents--text .apply-btn .btn:active {
+    color: #5cdb94 !important;
+    background-color: #fff !important;
     transition: background-color 2s ease, color 1s ease;
 }
 
