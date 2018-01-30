@@ -1,303 +1,694 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Status | The Mobile Ethereum Client</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-        <link rel="stylesheet" href="css/main.css" type="text/css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
-            _gaq.push(['_trackPageview']);
-            (function () {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Status | The Mobile Ethereum Client</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 
-    <body>
-        <div class="container-fluid fixed-top navigation navigation__background--top">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">
-                    <img class="navigation__logo" src="./images/nav-logo.svg" width="52" height="52" alt="Status Logo">
-                    <span class="navigation__name">
-                        <h3 class="navigation__name--title">Status</h3>
-                        <p class="navigation__name--subtitle">R&amp;D GRANTS</p>
-                    </span>
-                </a>
+</head>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><img src="./images/carat.svg"></span>
-                </button>
+<body>
+    <div class="container-fluid fixed-top navigation navigation__background--top">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img class="navigation__logo" src="./images/nav-logo.svg" width="52" height="52" alt="Status Logo">
+                <span class="navigation__name">
+                    <h3 class="navigation__name--title">Status</h3>
+                    <p class="navigation__name--subtitle">R&amp;D GRANTS</p>
+                </span>
+            </a>
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item navigation__link">
-                            <a class="navbar-link faq-btn" href="#faq">FAQs</a>
-                        </li>
-                        <li class="nav-item navigation__link">
-                            <a class="navbar-link apply-btn" href="#apply">Apply</a>
-                        </li>
-                        <li class="nav-item navigation__link">
-                            <a class="navbar-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img src="./images/carat.svg">
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item navigation__link">
+                        <a class="navbar-link faq-btn" href="#faq">FAQs</a>
+                    </li>
+                    <li class="nav-item navigation__link">
+                        <a class="navbar-link apply-btn" href="#apply">Apply</a>
+                    </li>
+                    <li class="nav-item navigation__link">
+                        <a class="navbar-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Hero section -->
+    <div class="container-fluid hero">
+        <div class="row hero__row">
+            <div class="col hero__contents">
+                <div class="container">
+                    <div class="row">
+                        <div class="hero__contents--text col-sm">
+                            <h1 class="title">Fund your work on the blockchain</h1>
+                            <p class="description">Status R&amp;D Grants funds individual researchers and teams developing protocol-layer tech for
+                                the decentralized Web—up to $150K USD available.</p>
+                            <a class="apply-btn" href="#apply">
+                                <button type="button" class="btn btn-primary">APPLY</button>
+                            </a>
+                        </div>
+                        <div class="hero__contents--image col-sm">
+                            <img src="./images/hero-img.svg" />
+                        </div>
+                        <p class="hero__contents--slogan">Open to all | Open source | Open to Ethereum and any other P2P platforms</p>
+                    </div>
                 </div>
-            </nav>
+            </div>
         </div>
-        <!-- Hero section -->
-        <div class="container-fluid hero">
-            <div class="row hero__row">
-                <div class="col hero__contents">
-                    <div class="container">
-                        <div class="row">
-                            <div class="hero__contents--text col-sm">
-                                <h1 class="title">Fund your work on the blockchain</h1>
-                                <p class="description">Status R&amp;D Grants funds individual researchers and teams developing protocol-layer tech for the decentralized Web—up to $150K USD available.</p>
-                                <a class="apply-btn" href="#apply"><button type="button" class="btn btn-primary">APPLY</button></a>
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Call to action section -->
+    <div class="container cta">
+        <div class="row cta__row">
+            <div class="col-sm cta__contents">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="cta__contents--block">
+                                <h3 class="cta__contents--header">
+                                    Committed to a decentralized Web
+                                </h3>
+                                <p class="cta__contents--text">Blockchain-based decentralization is a movement transforming industries around the world—and
+                                    Status wants to support talented computer science researchers developing protocol-level
+                                    tech that’ll make it more useful to society.
+                                    <a class="cta__contents--link" href="https://status.im/">Learn more about Status</a>
+                                </p>
                             </div>
-                            <div class="hero__contents--image col-sm">
-                                <img src="./images/hero-img.svg" />
+                            <div class="cta__contents--block">
+                                <h3 class="cta__contents--header">
+                                    Help build the foundation
+                                </h3>
+                                <p class="cta__contents--text">The blockchain is reshaping expectations about how people, organizations, even governments,
+                                    operate. But it’s still in its infancy. Scalability, security, and other challenges require
+                                    more research and development by people like you. Our R&amp;D Grants are available to
+                                    support your work making the benefits of the blockchain accessible to all. </p>
                             </div>
-                            <p class="hero__contents--slogan">Open to all | Open source | Open to Ethereum and any other P2P platforms</p>
+                            <div class="cta__contents--block">
+                                <h3 class="cta__contents--calloutheader">Our R&D Grants are available to support your work making the benefits of the blockchain accessible
+                                    to all.</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <img src="./images/lock.svg" alt="Lock and key">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Hero Section -->
-        <!-- Call to action section -->
-        <div class="container cta">
-            <div class="row cta__row">
-                <div class="col-sm cta__contents">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm">
-                                <div class="cta__contents--block">
-                                    <h3 class="cta__contents--header">
-                                        Committed to a decentralized Web
-                                    </h3>
-                                    <p class="cta__contents--text">Blockchain-based decentralization is a movement transforming industries around the world—and Status wants to support talented computer science researchers developing protocol-level tech that’ll make it more useful to society. <a class="cta__contents--link" href="https://status.im/">Learn more about Status</a></p>
-                                </div>
-                                <div class="cta__contents--block">
-                                    <h3 class="cta__contents--header">
-                                         Help build the foundation
-                                    </h3>
-                                    <p class="cta__contents--text">The blockchain is reshaping expectations about how people, organizations, even governments, operate. But it’s still in its infancy. Scalability, security, and other challenges require more research and development by people like you. Our R&amp;D Grants are available to support your work making the benefits of the blockchain accessible to all. </p>
-                                </div>
-                                <div class="cta__contents--block">
-                                    <h3 class="cta__contents--calloutheader">Our R&D Grants are available to support your work making the benefits of the blockchain accessible to all.</h3>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <img src="./images/lock.svg" alt="Lock and key">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    </div>
+
+    <div class="container partnership">
+        <div class="row">
+            <div class="col-sm partnership__block">
+                <p class="partnership__block--text">Partnership with:</p>
+                <img class="partnership__block--image" src="./images/ic3-logo.png" alt="ic3 Partnership Logo" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container apply">
+        <div class="row">
+            <div class="col-sm apply__block">
+                <h3 class="apply__block--header">Who can apply</h3>
+                <p class="apply__block--text">Graduate students and graduate-level teams in computer science with a focus on decentralization are encouraged
+                    to apply. Grants of $20K to $150K are available for qualified applicants.</p>
+                <p class="apply__block--text">*Note: Not in school? But passionate about blockchain protocols? Our FAQs cover all the edge cases.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container research">
+        <div class="row research__header">
+            <div class="col-sm">
+                <h3 class="research__header--text">Research topics to consider</h3>
+            </div>
+        </div>
+        <div class="row research__options">
+            <div class="col-sm-1 research__options--box">
+                <img class="research__options--icon" src="./images/research-blockchain.svg" />
+                <p class="research__options--text">Blockchain scalability solutions</p>
+            </div>
+
+            <div class="col-sm-1 research__options--box">
+                <img class="research__options--icon" src="./images/research-protocols.svg" />
+                <p class="research__options--text">Decentralized communication protocols</p>
+            </div>
+
+            <div class="col-sm-1 research__options--box">
+                <img class="research__options--icon" src="./images/research-filestorage.svg" />
+                <p class="research__options--text">Decentralized file storage protocols</p>
+            </div>
+
+            <div class="col-sm-1 research__options--box">
+                <img class="research__options--icon" src="./images/research-identity.svg" />
+                <p class="research__options--text">Decentralized identity systems</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <hr class="seperator" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container form" id="apply">
+        <div class="row">
+            <div class="col-sm form__block">
+                <h3 class="form__block--header">Apply Now</h3>
+                <p class="form__block--text">
+                    <strong>Deadline to apply:</strong> February 28, 2018</p>
+                <p class="form__block--text">Grant recipients notified by April 1, 2018</p>
             </div>
         </div>
 
-        <div class="container partnership">
-            <div class="row">
-                <div class="col-sm partnership__block">
-                    <p class="partnership__block--text">Partnership with:</p>
-                    <img class="partnership__block--image" src="./images/ic3-logo.png" alt="ic3 Partnership Logo" />
-                </div>
-            </div>
-        </div>
-
-        <div class="container apply">
-            <div class="row">
-                <div class="col-sm apply__block">
-                    <h3 class="apply__block--header">Who can apply</h3>
-                    <p class="apply__block--text">Graduate students and graduate-level teams in computer science with a focus on decentralization are encouraged to apply. Grants of $20K to $150K are available for qualified applicants.</p>
-                    <p class="apply__block--text">*Note: Not in school? But passionate about blockchain protocols? Our FAQs cover all the edge cases.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container research">
-            <div class="row research__header">
+        <form class="form" id="applyForm" action="https://forms.hubspot.com/uploads/form/v2/3954379/3d34bd51-b927-4a50-bc12-cd776541a1e7"
+            method="POST">
+            <div class="form-group row">
                 <div class="col-sm">
-                    <h3 class="research__header--text">Research topics to consider</h3>
+                    <label class="sr-only" for="firstName">First Name</label>
+                    <input class="form-control" id="firstName" type="text" name="firstname" placeholder="First">
                 </div>
-            </div>
-            <div class="row research__options">
-                <div class="col-sm-1 research__options--box">
-                    <img class="research__options--icon" src="./images/research-blockchain.svg" />
-                    <p class="research__options--text">Blockchain scalability solutions</p>
-                </div>
-
-                <div class="col-sm-1 research__options--box">
-                    <img class="research__options--icon" src="./images/research-protocols.svg" />
-                    <p class="research__options--text">Decentralized communication protocols</p>
-                </div>
-
-                <div class="col-sm-1 research__options--box">
-                    <img class="research__options--icon" src="./images/research-filestorage.svg" />
-                    <p class="research__options--text">Decentralized file storage protocols</p>
-                </div>
-
-                <div class="col-sm-1 research__options--box">
-                    <img class="research__options--icon" src="./images/research-identity.svg" />
-                    <p class="research__options--text">Decentralized identity systems</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
                 <div class="col-sm">
-                    <hr class="seperator"/>
+                    <label class="sr-only" for="lastName">Last Name</label>
+                    <input class="form-control" type="text" name="lastname" placeholder="Last">
                 </div>
             </div>
-        </div>
-
-        <div class="container form" id="apply">
-            <div class="row">
-                <div class="col-sm form__block">
-                    <h3 class="form__block--header">Apply Now</h3>
-                    <p class="form__block--text"><strong>Deadline to apply:</strong> February 28, 2018</p>
-                    <p class="form__block--text">Grant recipients notified by April 1, 2018</p>
-                </div>
-            </div>
-            <div class="row">
+            <div class="form-group row">
                 <div class="col-sm">
-                    FORM
+                    <label class="sr-only" for="countryofresidence">Country of Residence</label>
+                    <select class="form-control" id="countryofresidence" name="countryofresidence">
+                        <option value="">Country...</option>
+                        <option value="Afganistan">Afghanistan</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Anguilla">Anguilla</option>
+                        <option value="Antigua &amp; Barbuda">Antigua &amp; Barbuda</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Aruba">Aruba</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        <option value="Bahamas">Bahamas</option>
+                        <option value="Bahrain">Bahrain</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="Belarus">Belarus</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Belize">Belize</option>
+                        <option value="Benin">Benin</option>
+                        <option value="Bermuda">Bermuda</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Bonaire">Bonaire</option>
+                        <option value="Bosnia &amp; Herzegovina">Bosnia &amp; Herzegovina</option>
+                        <option value="Botswana">Botswana</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                        <option value="Brunei">Brunei</option>
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Cambodia">Cambodia</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Canary Islands">Canary Islands</option>
+                        <option value="Cape Verde">Cape Verde</option>
+                        <option value="Cayman Islands">Cayman Islands</option>
+                        <option value="Central African Republic">Central African Republic</option>
+                        <option value="Chad">Chad</option>
+                        <option value="Channel Islands">Channel Islands</option>
+                        <option value="Chile">Chile</option>
+                        <option value="China">China</option>
+                        <option value="Christmas Island">Christmas Island</option>
+                        <option value="Cocos Island">Cocos Island</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Comoros">Comoros</option>
+                        <option value="Congo">Congo</option>
+                        <option value="Cook Islands">Cook Islands</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cote DIvoire">Cote D'Ivoire</option>
+                        <option value="Croatia">Croatia</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Curaco">Curacao</option>
+                        <option value="Cyprus">Cyprus</option>
+                        <option value="Czech Republic">Czech Republic</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Djibouti">Djibouti</option>
+                        <option value="Dominica">Dominica</option>
+                        <option value="Dominican Republic">Dominican Republic</option>
+                        <option value="East Timor">East Timor</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                        <option value="Eritrea">Eritrea</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Falkland Islands">Falkland Islands</option>
+                        <option value="Faroe Islands">Faroe Islands</option>
+                        <option value="Fiji">Fiji</option>
+                        <option value="Finland">Finland</option>
+                        <option value="France">France</option>
+                        <option value="French Guiana">French Guiana</option>
+                        <option value="French Polynesia">French Polynesia</option>
+                        <option value="French Southern Ter">French Southern Ter</option>
+                        <option value="Gabon">Gabon</option>
+                        <option value="Gambia">Gambia</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Gibraltar">Gibraltar</option>
+                        <option value="Great Britain">Great Britain</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Greenland">Greenland</option>
+                        <option value="Grenada">Grenada</option>
+                        <option value="Guadeloupe">Guadeloupe</option>
+                        <option value="Guam">Guam</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Guinea">Guinea</option>
+                        <option value="Guyana">Guyana</option>
+                        <option value="Haiti">Haiti</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Hong Kong">Hong Kong</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="India">India</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Iran">Iran</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Isle of Man">Isle of Man</option>
+                        <option value="Israel">Israel</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Jamaica">Jamaica</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="Kazakhstan">Kazakhstan</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Kiribati">Kiribati</option>
+                        <option value="Korea North">Korea North</option>
+                        <option value="Korea Sout">Korea South</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                        <option value="Laos">Laos</option>
+                        <option value="Latvia">Latvia</option>
+                        <option value="Lebanon">Lebanon</option>
+                        <option value="Lesotho">Lesotho</option>
+                        <option value="Liberia">Liberia</option>
+                        <option value="Libya">Libya</option>
+                        <option value="Liechtenstein">Liechtenstein</option>
+                        <option value="Lithuania">Lithuania</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Macau">Macau</option>
+                        <option value="Macedonia">Macedonia</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Malawi">Malawi</option>
+                        <option value="Maldives">Maldives</option>
+                        <option value="Mali">Mali</option>
+                        <option value="Malta">Malta</option>
+                        <option value="Marshall Islands">Marshall Islands</option>
+                        <option value="Martinique">Martinique</option>
+                        <option value="Mauritania">Mauritania</option>
+                        <option value="Mauritius">Mauritius</option>
+                        <option value="Mayotte">Mayotte</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Midway Islands">Midway Islands</option>
+                        <option value="Moldova">Moldova</option>
+                        <option value="Monaco">Monaco</option>
+                        <option value="Mongolia">Mongolia</option>
+                        <option value="Montserrat">Montserrat</option>
+                        <option value="Morocco">Morocco</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Myanmar">Myanmar</option>
+                        <option value="Nambia">Nambia</option>
+                        <option value="Nauru">Nauru</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Netherland Antilles">Netherland Antilles</option>
+                        <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                        <option value="Nevis">Nevis</option>
+                        <option value="New Caledonia">New Caledonia</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Niue">Niue</option>
+                        <option value="Norfolk Island">Norfolk Island</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Palau Island">Palau Island</option>
+                        <option value="Palestine">Palestine</option>
+                        <option value="Panama">Panama</option>
+                        <option value="Papua New Guinea">Papua New Guinea</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Phillipines">Philippines</option>
+                        <option value="Pitcairn Island">Pitcairn Island</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Republic of Montenegro">Republic of Montenegro</option>
+                        <option value="Republic of Serbia">Republic of Serbia</option>
+                        <option value="Reunion">Reunion</option>
+                        <option value="Romania">Romania</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="St Barthelemy">St Barthelemy</option>
+                        <option value="St Eustatius">St Eustatius</option>
+                        <option value="St Helena">St Helena</option>
+                        <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                        <option value="St Lucia">St Lucia</option>
+                        <option value="St Maarten">St Maarten</option>
+                        <option value="St Pierre &amp; Miquelon">St Pierre &amp; Miquelon</option>
+                        <option value="St Vincent &amp; Grenadines">St Vincent &amp; Grenadines</option>
+                        <option value="Saipan">Saipan</option>
+                        <option value="Samoa">Samoa</option>
+                        <option value="Samoa American">Samoa American</option>
+                        <option value="San Marino">San Marino</option>
+                        <option value="Sao Tome &amp; Principe">Sao Tome &amp; Principe</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="Senegal">Senegal</option>
+                        <option value="Serbia">Serbia</option>
+                        <option value="Seychelles">Seychelles</option>
+                        <option value="Sierra Leone">Sierra Leone</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Slovakia">Slovakia</option>
+                        <option value="Slovenia">Slovenia</option>
+                        <option value="Solomon Islands">Solomon Islands</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Suriname">Suriname</option>
+                        <option value="Swaziland">Swaziland</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Syria">Syria</option>
+                        <option value="Tahiti">Tahiti</option>
+                        <option value="Taiwan">Taiwan</option>
+                        <option value="Tajikistan">Tajikistan</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Togo">Togo</option>
+                        <option value="Tokelau">Tokelau</option>
+                        <option value="Tonga">Tonga</option>
+                        <option value="Trinidad &amp; Tobago">Trinidad &amp; Tobago</option>
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Turkmenistan">Turkmenistan</option>
+                        <option value="Turks &amp; Caicos Is">Turks &amp; Caicos Is</option>
+                        <option value="Tuvalu">Tuvalu</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="United Arab Erimates">United Arab Emirates</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="United States of America">United States of America</option>
+                        <option value="Uraguay">Uruguay</option>
+                        <option value="Uzbekistan">Uzbekistan</option>
+                        <option value="Vanuatu">Vanuatu</option>
+                        <option value="Vatican City State">Vatican City State</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                        <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                        <option value="Wake Island">Wake Island</option>
+                        <option value="Wallis &amp; Futana Is">Wallis &amp; Futana Is</option>
+                        <option value="Yemen">Yemen</option>
+                        <option value="Zaire">Zaire</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
                 </div>
             </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
+            <div class="form-group row">
                 <div class="col-sm">
-                    <hr class="seperator" />
+                    <label class="sr-only" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Email">
                 </div>
             </div>
-        </div>
-
-        <div class="container faq">
-            <div class="row">
-                <div class="col-sm faq__header">
-                    <h3 class="faq__header--text">
-                        FAQs
-                    </h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="container question" id="faq">
-            <div class="row">
-                <div class="col-sm col-md-8 offset-md-2 question__block show" data-toggle="false">
-                    <div class="question__block--heading">
-                        <h3 class="question__block--heading_text">Can I apply if I’m not part of a university / Institution / organization ?</h3>
-                        <img class="question__block--carat" src="./images/carat.svg">
-                    </div>
-                    <div class="question__block--body">
-                        <p class="question__block--body_text">The blockchain is reshaping expectations about how people, organizations, even governments, operate. But it’s still in its infancy. Scalability, security, and other challenges require more research and development by people like you. Our R&D Grants are available to support your work making the benefits of the blockchain accessible to all. The blockchain is reshaping expectations about how people, organizations, even governments, operate. But it’s still in its infancy. Scalability, security, and other challenges require more research and development by people like you. Our R&D Grants are available to support your work making the benefits of the blockchain accessible to all. The blockchain is reshaping expectations about how people, organizations, even governments, operate. But it’s still in its infancy. Scalability, security, and other challenges require more research and development by people like you. Our R&D Grants are available to support your work making the benefits of the blockchain accessible to all. The blockchain is reshaping expectations about how people, organizations, even governments, operate. But it’s still in its infancy. Scalability, security, and other challenges require more research and development by people like you. Our R&D Grants are available to support your work making the benefits of the blockchain accessible to all. The blockchain is reshaping expectations about how people, organizations, even governments, operate. But it’s still in its infancy. Scalability, security, and other challenges require more research and development by people like you. Our R&D Grants are available to support your work making the benefits of the blockchain accessible to all. The blockchain is reshaping expectations about how people, organizations, even governments, operate. But it’s still in its infancy. Scalability, security, and other challenges require more research and development by people like you. Our R&D Grants are available to support your work making the benefits of the blockchain accessible to all.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
+            <div class="form-group row">
                 <div class="col-sm">
-                    <hr class="seperator" />
+                    <label class="sr-only" for="username">Username</label>
+                    <input class="form-control" type="username" id="username" name="username" placeholder="Username">
+                </div>
+                <div class="col-sm">
+                    <label class="sr-only" for="relevant_repositories">Relevant Repositories</label>
+                    <input class="form-control" type="text" id="relevant_repositories" name="relevant_repositories" placeholder="Relevant Repositories">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm">
+                    <label for="name_of_institution" class="">NAME OF INSTITUTION / UNIVERSITY / ORGANIZATION (if applicable):</label>
+                    <input type="text" class="form-control" id="name_of_institution" name="name_of_institution">
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="form-group row">
+                <div class="col-sm">
+                    <label for="upload_resume" class="">Resume:</label>
+                    <input type="file" class="form-control" id="upload_resume" name="upload_resume">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm">
+                    <label for="paste_resume" class="">OR</label>
+                    <textarea class="form-control" id="paste_resume" name="paste_resume" placeholder="Paste or type..."></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm">
+                    <label for="project1" class="sr-only">Name of Project</label>
+                    <input type="text" class="form-control" id="project1" name="project1" placeholder="Name of Project">
+                </div>
+                <img src="./images/carat-right.svg">
+                <div class="col-sm">
+                    <label for="project1url" class="sr-only">URL</label>
+                    <input type="text" class="form-control" id="project1url" name="project1url" placeholder="URL">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm">
+                    <label for="project2" class="sr-only">Name of Project</label>
+                    <input type="text" class="form-control" id="project2" name="project2" placeholder="Name of Project">
+                </div>
+                <img src="./images/carat-right.svg">
+                <div class="col-sm">
+                    <label for="project2url" class="sr-only">URL</label>
+                    <input type="text" class="form-control" id="project2url" name="project2url" placeholder="URL">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm">
+                    <label for="project3" class="sr-only">Name of Project</label>
+                    <input type="text" class="form-control" id="project3" name="project3" placeholder="Name of Project">
+                </div>
+                <img src="./images/carat-right.svg">
+                <div class="col-sm">
+                    <label for="project3url" class="sr-only">URL</label>
+                    <input type="text" class="form-control" id="project3url" name="project3url" placeholder="URL">
+                </div>
+            </div>
+
+            <hr />
+            <div class="form-group row">
+                <div class="col-sm">
+                    <label for="area_of_focus" class="sr-only">Area of focus</label>
+                    <select class="form-control" id="area_of_focus" name="area_of_focus">
+                        <option value="Scalability">Scalability</option>
+                        <option value="Decentralized-communication">Decentralized communication</option>
+                        <option value="Decentralized-file-storage">Decentralized file storage</option>
+                        <option value="Identity-or-reputation-systems">Identity or reputation systems</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <hr class="seperator" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container faq">
+        <div class="row">
+            <div class="col-sm faq__header">
+                <h3 class="faq__header--text">
+                    FAQs
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container question" id="faq">
+        <div class="row">
+            <div class="col-sm col-md-8 offset-md-2 question__block show" data-toggle="false">
+                <div class="question__block--heading">
+                    <h3 class="question__block--heading_text">Can I apply if I’m not part of a university / Institution / organization ?</h3>
+                    <img class="question__block--carat" src="./images/carat.svg">
+                </div>
+                <div class="question__block--body">
+                    <p class="question__block--body_text">The blockchain is reshaping expectations about how people, organizations, even governments, operate.
+                        But it’s still in its infancy. Scalability, security, and other challenges require more research
+                        and development by people like you. Our R&D Grants are available to support your work making the
+                        benefits of the blockchain accessible to all. The blockchain is reshaping expectations about how
+                        people, organizations, even governments, operate. But it’s still in its infancy. Scalability, security,
+                        and other challenges require more research and development by people like you. Our R&D Grants are
+                        available to support your work making the benefits of the blockchain accessible to all. The blockchain
+                        is reshaping expectations about how people, organizations, even governments, operate. But it’s still
+                        in its infancy. Scalability, security, and other challenges require more research and development
+                        by people like you. Our R&D Grants are available to support your work making the benefits of the
+                        blockchain accessible to all. The blockchain is reshaping expectations about how people, organizations,
+                        even governments, operate. But it’s still in its infancy. Scalability, security, and other challenges
+                        require more research and development by people like you. Our R&D Grants are available to support
+                        your work making the benefits of the blockchain accessible to all. The blockchain is reshaping expectations
+                        about how people, organizations, even governments, operate. But it’s still in its infancy. Scalability,
+                        security, and other challenges require more research and development by people like you. Our R&D
+                        Grants are available to support your work making the benefits of the blockchain accessible to all.
+                        The blockchain is reshaping expectations about how people, organizations, even governments, operate.
+                        But it’s still in its infancy. Scalability, security, and other challenges require more research
+                        and development by people like you. Our R&D Grants are available to support your work making the
+                        benefits of the blockchain accessible to all.</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="container terms">
-            <div class="row">
-                <div class="col-sm terms__block">
-                    <a href="#" class="terms__block--link">Terms and Conditions</a>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <hr class="seperator" />
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid footer">
-            <div class="row">
-                <div class="offset-sm-1 col-sm-4 footer__left_block">
-                    <span class="footer__left_block--logo_container">
-                        <img class="footer__left_block--logo" src="./images/footer-logo.svg" alt="Status Logo" />
-                    </span>
-                    <span class="footer__left_block--address_container">
-                        <p class="footer__left_block--address">Status Holdings Pte. Ltd.</p>
-                        <p class="footer__left_block--address">6 Ubi Road Singapore</p>
-                    </span>
-                </div>
-                <div class="col-sm-2 footer__right_block">
-                    <span class="footer__right_block--header_container">
-                        <p class="footer__right_block--header_text">Social networks</p>
-                    </span>
-                    <span class="footer__right_block--header_links">
-                        <a href="https://www.facebook.com/ethstatus" class="footer__right_block--link">
-                            <img src="./images/social-facebook.svg" class="footer__right_block--icon">
-                            <span>Facebook</span>
-                        </a>
-                        <a href="https://twitter.com/ethstatus" class="footer__right_block--link">
-                            <img src="./images/social-twitter.svg" class="footer__right_block--icon">
-                            <span>Twitter</span>
-                        </a>
-                        <a href="#" class="footer__right_block--link">
-                            <img src="./images/social-slack.svg" class="footer__right_block--icon">
-                            <span>Slack</span>
-                        </a>
-                        <a href="https://github.com/status-im" class="footer__right_block--link">
-                            <img src="./images/social-github.svg" class="footer__right_block--icon">
-                            <span>Github</span>
-                        </a>
-                        <a href="https://www.reddit.com/r/statusim/" class="footer__right_block--link">
-                            <img src="./images/social-reddit.svg" class="footer__right_block--icon">
-                            <span>r/status</span>
-                        </a>
-                    </span>
-                </div>
-                <div class="col-sm-2 footer__right_block">
-                    <span class="footer__right_block__header_container">
-                        <p class="footer__right_block--header_text">Community</p>
-                    </span>
-                    <span class="footer__right_block__header_links">
-                        <a href="https://wiki.status.im/" class="footer__right_block--link">
-                            <span>Wiki</span>
-                        </a>
-                        <a href="#" class="footer__right_block--link">
-                            <span>Privacy policy</span>
-                        </a>
-                        <a href="https://status.im/open-positions.html" class="footer__right_block--link">
-                            <span>Jobs</span>
-                        </a>
-                    </span>
-                </div>
-                <div class="col-sm-2 footer__right_block">
-                    <span class="footer__right_block__header_container">
-                        <p class="footer__right_block--header_text">Language</p>
-                    </span>
-                    <span class="footer__right_block__header_links">
-                        <select class="footer__right_block--header_select language-switcher" name="lang">
-                            <option value="en" selected="selected">English</option>
-                            <option value="es">Español</option>
-                            <option value="fr">Français</option>
-                            <option value="cn">中文</option>
-                        </select>
-                    </span>
-                </div>
+    <div class="container terms">
+        <div class="row">
+            <div class="col-sm terms__block">
+                <a href="#" class="terms__block--link">Terms and Conditions</a>
             </div>
         </div>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="js/app.js" type="text/javascript"></script>
-    </body>
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="offset-sm-1 col-sm-4 footer__left_block">
+                <span class="footer__left_block--logo_container">
+                    <img class="footer__left_block--logo" src="./images/footer-logo.svg" alt="Status Logo" />
+                </span>
+                <span class="footer__left_block--address_container">
+                    <p class="footer__left_block--address">Status Holdings Pte. Ltd.</p>
+                    <p class="footer__left_block--address">6 Ubi Road Singapore</p>
+                </span>
+            </div>
+            <div class="col-sm-2 footer__right_block">
+                <span class="footer__right_block--header_container">
+                    <p class="footer__right_block--header_text">Social networks</p>
+                </span>
+                <span class="footer__right_block--header_links">
+                    <a href="https://www.facebook.com/ethstatus" class="footer__right_block--link">
+                        <img src="./images/social-facebook.svg" class="footer__right_block--icon">
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://twitter.com/ethstatus" class="footer__right_block--link">
+                        <img src="./images/social-twitter.svg" class="footer__right_block--icon">
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="footer__right_block--link">
+                        <img src="./images/social-slack.svg" class="footer__right_block--icon">
+                        <span>Slack</span>
+                    </a>
+                    <a href="https://github.com/status-im" class="footer__right_block--link">
+                        <img src="./images/social-github.svg" class="footer__right_block--icon">
+                        <span>Github</span>
+                    </a>
+                    <a href="https://www.reddit.com/r/statusim/" class="footer__right_block--link">
+                        <img src="./images/social-reddit.svg" class="footer__right_block--icon">
+                        <span>r/status</span>
+                    </a>
+                </span>
+            </div>
+            <div class="col-sm-2 footer__right_block">
+                <span class="footer__right_block__header_container">
+                    <p class="footer__right_block--header_text">Community</p>
+                </span>
+                <span class="footer__right_block__header_links">
+                    <a href="https://wiki.status.im/" class="footer__right_block--link">
+                        <span>Wiki</span>
+                    </a>
+                    <a href="#" class="footer__right_block--link">
+                        <span>Privacy policy</span>
+                    </a>
+                    <a href="https://status.im/open-positions.html" class="footer__right_block--link">
+                        <span>Jobs</span>
+                    </a>
+                </span>
+            </div>
+            <div class="col-sm-2 footer__right_block">
+                <span class="footer__right_block__header_container">
+                    <p class="footer__right_block--header_text">Language</p>
+                </span>
+                <span class="footer__right_block__header_links">
+                    <select class="footer__right_block--header_select language-switcher" name="lang">
+                        <option value="en" selected="selected">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="cn">中文</option>
+                    </select>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
 
 </html>
