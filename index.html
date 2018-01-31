@@ -147,6 +147,7 @@
                 <h3 class="research__header--text">Research topics to consider</h3>
             </div>
         </div>
+
         <div class="row research__options">
             <div class="col-sm-1 research__options--box">
                 <img class="research__options--icon" src="./images/research-blockchain.svg" />
@@ -185,11 +186,13 @@
                 <p class="form__block--text">
                     <strong>Deadline to apply:</strong> February 28, 2018</p>
                 <p class="form__block--text">Grant recipients notified by April 1, 2018</p>
+
+                <small class="form__block--small">All fields are required unless otherwise noted</small>
             </div>
         </div>
 
-        <form class="form" id="applyForm" action="https://forms.hubspot.com/uploads/form/v2/3954379/3d34bd51-b927-4a50-bc12-cd776541a1e7"
-            method="POST">
+        <form method="POST" enctype="multipart/form-data" id="applyForm" action="https://forms.hubspot.com/uploads/form/v2/3954379/3d34bd51-b927-4a50-bc12-cd776541a1e7">
+            <label>NAME OF APPLICANT:</label>
             <div class="form-group row">
                 <div class="col-sm">
                     <label class="sr-only" for="firstName">First Name</label>
@@ -201,10 +204,10 @@
                 </div>
             </div>
             <div class="form-group row">
-                <div class="col-sm">
+                <div class="col-sm col-md-6">
                     <label class="sr-only" for="countryofresidence">Country of Residence</label>
                     <select class="form-control" id="countryofresidence" name="countryofresidence">
-                        <option value="">Country...</option>
+                        <option value="">Country of Residence</option>
                         <option value="Afganistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
                         <option value="Algeria">Algeria</option>
@@ -460,21 +463,57 @@
                     <label class="sr-only" for="email">Email</label>
                     <input class="form-control" type="email" id="email" name="email" placeholder="Email">
                 </div>
-            </div>
-            <div class="form-group row">
                 <div class="col-sm">
                     <label class="sr-only" for="username">Username</label>
                     <input class="form-control" type="username" id="username" name="username" placeholder="Username">
                 </div>
-                <div class="col-sm">
-                    <label class="sr-only" for="relevant_repositories">Relevant Repositories</label>
-                    <input class="form-control" type="text" id="relevant_repositories" name="relevant_repositories" placeholder="Relevant Repositories">
+            </div>
+            <div class="form-group row repo" data-repository-id="1">
+                <div class="col-sm col-md-6">
+                    <label class="sr-only" for="repositories1">Relevant Repositories</label>
+                    <input class="form-control" type="text" id="repositories1" name="repositories1" placeholder="Relevant Repositories">
+                </div>
+                <div class="col-sm col-md-6">
+                    <span class="more-icon more-repo">&#x2795;</span>
+                </div>
+            </div>
+            <div class="form-group row hidden repo" data-repository-id="2">
+                <div class="col-sm col-md-6">
+                    <label class="sr-only" for="repositories2">Relevant Repositories</label>
+                    <input class="form-control" type="text" id="repositories2" name="repositories2" placeholder="Relevant Repositories">
+                </div>
+                <div class="col-sm col-md-6">
+                    <p class="more-icon more-repo">&#x2795;</p>
+                </div>
+            </div>
+            <div class="form-group row hidden repo" data-repository-id="2">
+                <div class="col-sm col-md-6">
+                    <label class="sr-only" for="repositories3">Relevant Repositories</label>
+                    <input class="form-control" type="text" id="repositories3" name="repositories3" placeholder="Relevant Repositories">
+                </div>
+                <div class="col-sm col-md-6">
+                    <p class="more-icon more-repo">&#x2795;</p>
+                </div>
+            </div>
+            <div class="form-group row hidden repo" data-repository-id="4">
+                <div class="col-sm col-md-6">
+                    <label class="sr-only" for="repositories4">Relevant Repositories</label>
+                    <input class="form-control" type="text" id="repositories4" name="repositories4" placeholder="Relevant Repositories">
+                </div>
+                <div class="col-sm col-md-6">
+                    <p class="more-icon more-repo">&#x2795;</p>
+                </div>
+            </div>
+            <div class="form-group row hidden repo" data-repository-id="5">
+                <div class="col-sm col-md-6">
+                    <label class="sr-only" for="repositories5">Relevant Repositories</label>
+                    <input class="form-control" type="text" id="repositories5" name="repositories5" placeholder="Relevant Repositories">
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-sm">
                     <label for="name_of_institution" class="">NAME OF INSTITUTION / UNIVERSITY / ORGANIZATION (if applicable):</label>
-                    <input type="text" class="form-control" id="name_of_institution" name="name_of_institution">
+                    <input type="text" class="form-control" id="name_of_institution" name="name_of_institution" placeholder="Institution / University / Organization">
                 </div>
             </div>
 
@@ -483,16 +522,18 @@
             <div class="form-group row">
                 <div class="col-sm">
                     <label for="upload_resume" class="">Resume:</label>
+                    <button class="btn btn-primary upload_resume_btn hidden" id="upload_resume_btn">Upload Resume (PDF)</button>
+                    <small id="upload_resume_filename" class="hidden"></small>
                     <input type="file" class="form-control" id="upload_resume" name="upload_resume">
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-sm">
-                    <label for="paste_resume" class="">OR</label>
-                    <textarea class="form-control" id="paste_resume" name="paste_resume" placeholder="Paste or type..."></textarea>
+                    <label for="paste_resume">OR</label>
+                    <textarea class="form-control" id="paste_resume" name="paste_resume" rows="5" placeholder="Paste or type..."></textarea>
                 </div>
             </div>
-            <div class="form-group row">
+            <div class="form-group row project">
                 <div class="col-sm">
                     <label for="project1" class="sr-only">Name of Project</label>
                     <input type="text" class="form-control" id="project1" name="project1" placeholder="Name of Project">
@@ -503,7 +544,7 @@
                     <input type="text" class="form-control" id="project1url" name="project1url" placeholder="URL">
                 </div>
             </div>
-            <div class="form-group row">
+            <div class="form-group row project">
                 <div class="col-sm">
                     <label for="project2" class="sr-only">Name of Project</label>
                     <input type="text" class="form-control" id="project2" name="project2" placeholder="Name of Project">
@@ -514,7 +555,7 @@
                     <input type="text" class="form-control" id="project2url" name="project2url" placeholder="URL">
                 </div>
             </div>
-            <div class="form-group row">
+            <div class="form-group row project">
                 <div class="col-sm">
                     <label for="project3" class="sr-only">Name of Project</label>
                     <input type="text" class="form-control" id="project3" name="project3" placeholder="Name of Project">
@@ -525,16 +566,80 @@
                     <input type="text" class="form-control" id="project3url" name="project3url" placeholder="URL">
                 </div>
             </div>
+            <div class="form-group row hidden project">
+                <div class="col-sm">
+                    <label for="project4" class="sr-only">Name of Project</label>
+                    <input type="text" class="form-control" id="project4" name="project4" placeholder="Name of Project">
+                </div>
+                <img src="./images/carat-right.svg">
+                <div class="col-sm">
+                    <label for="project4url" class="sr-only">URL</label>
+                    <input type="text" class="form-control" id="project4url" name="project4url" placeholder="URL">
+                </div>
+            </div>
+            <div class="form-group row hidden project">
+                <div class="col-sm">
+                    <label for="project5" class="sr-only">Name of Project</label>
+                    <input type="text" class="form-control" id="project5" name="project3" placeholder="Name of Project">
+                </div>
+                <img src="./images/carat-right.svg">
+                <div class="col-sm">
+                    <label for="project5url" class="sr-only">URL</label>
+                    <input type="text" class="form-control" id="project5url" name="project5url" placeholder="URL">
+                </div>
+            </div>
+
+            <div class="form-group row hidden project">
+                <div class="col-sm">
+                    <label for="project6" class="sr-only">Name of Project</label>
+                    <input type="text" class="form-control" id="project6" name="project6" placeholder="Name of Project">
+                </div>
+                <img src="./images/carat-right.svg">
+                <div class="col-sm">
+                    <label for="project6url" class="sr-only">URL</label>
+                    <input type="text" class="form-control" id="project6url" name="project6url" placeholder="URL">
+                </div>
+            </div>
+
+            <div class="form-group row hidden project">
+                <div class="col-sm">
+                    <label for="project7" class="sr-only">Name of Project</label>
+                    <input type="text" class="form-control" id="project7" name="project7" placeholder="Name of Project">
+                </div>
+                <img src="./images/carat-right.svg">
+                <div class="col-sm">
+                    <label for="project7url" class="sr-only">URL</label>
+                    <input type="text" class="form-control" id="project7url" name="project7url" placeholder="URL">
+                </div>
+            </div>
+
+            <div class="form-group row hidden project last">
+                <div class="col-sm">
+                    <label for="project8" class="sr-only">Name of Project</label>
+                    <input type="text" class="form-control" id="project8" name="project8" placeholder="Name of Project">
+                </div>
+                <img src="./images/carat-right.svg">
+                <div class="col-sm">
+                    <label for="project8url" class="sr-only">URL</label>
+                    <input type="text" class="form-control" id="project8url" name="project8url" placeholder="URL">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm more-projects-container">
+                    <span class="more-icon more-projects">&#x2795;</span>
+                </div>
+            </div>
 
             <hr />
             <div class="form-group row">
-                <div class="col-sm">
+                <div class="col-sm col-md-6">
                     <label for="area_of_focus" class="sr-only">Area of focus</label>
                     <select class="form-control" id="area_of_focus" name="area_of_focus">
+                        <option selected="selected">Area of Focus</option>
                         <option value="Scalability">Scalability</option>
-                        <option value="Decentralized-communication">Decentralized communication</option>
-                        <option value="Decentralized-file-storage">Decentralized file storage</option>
-                        <option value="Identity-or-reputation-systems">Identity or reputation systems</option>
+                        <option value="Decentralized communication">Decentralized communication</option>
+                        <option value="Decentralized file storage">Decentralized file storage</option>
+                        <option value="Identity or reputation systems">Identity or reputation systems</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>
@@ -542,6 +647,26 @@
 
             <div class="form-group row">
                 <div class="col-sm">
+                    <label for="tell_us_about_your_project" class="">TELL US ABOUT YOUR PROJECT (Summary, goals, team members, project roadmap) 500 words or less.</label>
+                    <textarea id="tell_us_about_your_project" name="tell_us_about_your_project" rows="5" class="form-control" placeholder="Paste or type"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm col-md-6">
+                    <label for="amount_requesting" class="sr-only">Amount Requesting</label>
+                    <select class="form-control" id="amount_requesting" name="amount_requesting">
+                        <option value="" selected>Amount Requested</option>
+                        <option value="20,000">$20,000</option>
+                        <option value="50,000">$50,000</option>
+                        <option value="100,000">$100,000</option>
+                        <option value="150,000">$150,000</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row form__submit">
+                <div class="col-sm text-center">
                     <button class="btn btn-primary" type="submit">Submit</button>
                 </div>
             </div>

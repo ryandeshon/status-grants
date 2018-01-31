@@ -22,8 +22,11 @@ body {
     min-height: 100vh;
     font-family: "PostGrotesk-Book", sans-serif;
     z-index: 1;
-    margin-bottom: 385px !important;
     box-shadow: 0 0 30px 0 rgba(54, 69, 79, 0.86)
+}
+
+body {
+    margin-bottom: 385px !important;
 }
 
 a {
@@ -32,6 +35,16 @@ a {
     color: #5CDB94;
     letter-spacing: 0;
     text-decoration: none;
+}
+
+small {
+    opacity: 0.75;
+	font-family: "PostGrotesk-Book";
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.92;
+    align-self: flex-start;
+	color: #494949;
 }
 
 .navigation__background--scroll {
@@ -439,12 +452,17 @@ a {
 
 .form {
     padding: 40px;
+    max-width: 800px !important;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 .form__block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 .form__block--header {
     font-family: "PostGrotesk-Medium", sans-serif;
@@ -465,6 +483,132 @@ a {
 	text-align: center;
 	color: #494949;
 }
+
+.form__block--small {
+    margin-top: 2rem;
+}
+
+.form .more-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.form .more-projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .upload_resume_btn,
+.form .upload_resume_btn:active,
+.form .upload_resume_btn:hover,
+.form .upload_resume_btn:focus {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-family: "PostGrotesk-Book", sans-serif;
+    border-radius: 8px;
+    background-color: #695aa3;
+    color: #fff;
+    border: solid 1px rgba(199, 206, 209, 0.12);
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+
+.form input,
+.form input:active,
+.form input:hover,
+.form input:focus {
+    height: 45px;
+	background-color: #ffffff;
+    box-shadow: 0 2px 6px 0 rgba(137, 127, 154, 0.24);
+    opacity: 0.75;
+	font-family: "PostGrotesk-book";
+	font-size: 16px;
+	line-height: 1.56;
+	text-align: left;
+    color: #494949;
+    border-radius: 8px;
+    border: none;
+}
+
+.form select,
+.form select:active,
+.form select:hover,
+.form select:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+	font-weight: 500;
+	line-height: 1.15;
+	letter-spacing: 1px;
+    font-family: "PostGrotesk-Book";
+    height: 45px !important;
+    border-radius: 8px;
+    border: none;
+    background-color: #695aa3;
+    color: #fff;
+    border: solid 1px rgba(199, 206, 209, 0.12);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background-image: url('../images/carat-sm.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: calc(100% - 10px)
+}
+
+.form__submit {
+    margin-top: 4rem;
+}
+.form .form-group {
+    margin-bottom: 35px;
+}
+
+.form .hidden {
+    display: none;
+}
+
+.form label {
+	opacity: 0.75;
+	font-family: "PostGrotesk-Book";
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.92;
+	text-align: left;
+    color: #494949;
+    margin-bottom: 5px;
+}
+
+.form button {
+    text-transform: uppercase;
+    font-family: "PostGrotesk-Book";
+	font-size: 13px;
+    width: 220px;
+    height: 45px;
+	border-radius: 8px;
+	background-color: #5cdb94;
+	border: solid 1px rgba(199, 206, 209, 0.12);
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    color: #5cdb94;
+    background-color: #fff;
+    transition: color 1s ease, background-color 1s ease;
+    border: 1px solid #5cdb94;
+}
+
 
 .faq {
     padding: 60px;

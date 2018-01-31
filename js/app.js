@@ -1,4 +1,5 @@
 (function ($) {
+  // Trigger nav bar transition
   $(document).on('scroll', function () {
     var target = $('.navigation');
     if ($(this).scrollTop() > 400) {
@@ -10,6 +11,7 @@
     }
   })
 
+  // Smooth scroll to apply section
   $('.apply-btn').on('click', function (e) {
     e.preventDefault()
     $('html, body').animate({
@@ -44,6 +46,7 @@
     }
   })
 
+  // Trigger the language switcher
   $('.language-switcher').on('change', function (e) {
     var selected = $(this).val()
     if (selected === 'en') {
@@ -52,4 +55,69 @@
       window.location.href = selected + '.html'
     }
   })
+
+  // Short more repo fields
+  $('.more-repo').on('click', function (e) {
+    var parent = $(this).closest('.repo');
+    parent.next('.hidden').first().removeClass('hidden');
+    $(this).hide();
+  })
+
+  // Show more projects
+  $('.more-projects').on('click', function (e) {
+    var projects = $('.project');
+    projects.each(function (i, ele) {
+      if ($(ele).hasClass('hidden')) {
+        $(ele).removeClass('hidden');
+        if ($(ele).hasClass('last')) {
+          $('.more-projects').hide();
+        }
+        return false;
+      }
+    })
+  })
+
+  // If javascript enabled, hide the html file
+  // input box and replace with a nice button.
+  $(document).ready(function () {
+    $('.upload_resume_btn').show();
+    $('#upload_resume_filename').show();
+    $('#upload_resume').hide();
+  })
+
+  // Trigger the file upload input box
+  $('.upload_resume_btn').on('click', function (e) {
+    e.preventDefault();
+    $('#upload_resume').trigger('click');
+  })
+
+  // Make file change visible
+  $('#upload_resume').on('change', function (e) {
+    var file = $('#upload_resume').val();
+    if (file) {
+      var fileName = file.split(/(\\|\/)/g).pop();
+      $('#upload_resume_filename').text(fileName);
+    }
+  })
+
+  // On form submit, prevent default then submit via ajax
+  $('#applyForm').on('submit', function (e) {
+    e.preventDefault();
+    // Grab form data
+    var data = {}
+    $(this).find('input, select, textarea').each(function (i, ele) {
+      var field = $(ele);
+      var name = field.attr('name');
+      var value
+      if (field.attr('type') === 'file') {
+        value = new FormData(field[0].files[0]);
+      } else {
+        value = field.val();
+      }
+
+      data[name] = value
+    })
+    console.log(data)
+  })
+
 })(jQuery);
