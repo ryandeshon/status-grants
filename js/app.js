@@ -39,17 +39,16 @@
     // Toggle FAQ block open and closed
     $('.question__block').on('click', function (e) {
       var toggle = $(this).data('toggle')
-      console.log(toggle)
       if (toggle) {
         $(this).data('toggle', false)
-        $(this).find('.question__block--body').hide()
         $(this).find('.question__block--carat').removeClass('flip')
         $(this).find('.question__block--carat').addClass('flip-reverse')
+        $(this).find('.question__block--body').addClass('open')
       } else {
         $(this).data('toggle', true)
-        $(this).find('.question__block--body').show()
         $(this).find('.question__block--carat').removeClass('flip-reverse')
         $(this).find('.question__block--carat').addClass('flip')
+        $(this).find('.question__block--body').addClass('open')
         $('html, body').animate({
           scrollTop: $(this).offset().top - 200
         }, 1000);

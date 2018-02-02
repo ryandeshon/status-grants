@@ -685,9 +685,13 @@ small {
     flex-grow: 1
 }
 .question__block--body {
-    max-height: 380px;
+    max-height: 0;
     overflow: auto;
-    display: none;
+    /* display: none; */
+    transition: max-height 1s ease;
+}
+.open {
+    max-height: 380px;
 }
 .question__block--body_text {
     font-family: PostGrotesk-Book, sans-serif;
