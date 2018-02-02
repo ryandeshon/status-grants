@@ -457,6 +457,11 @@ small {
     justify-content: center;
     align-items: center;
 }
+
+.form .error {
+    border: 1px solid red;
+}
+
 .form__block {
     display: flex;
     flex-direction: column;
@@ -566,9 +571,25 @@ small {
     background-position: center;
     background-position-x: calc(100% - 10px)
 }
-
 .form__submit {
     margin-top: 4rem;
+}
+.form__submit--btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form__submit--btn .submit-error {
+    color: red;
+}
+.form .upload_button {
+    display: flex;
+    align-items: center;
+}
+.form .upload_button small {
+    margin-left: 1rem;
+    align-self: center;
 }
 .form .form-group {
     margin-bottom: 35px;

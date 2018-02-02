@@ -110,13 +110,68 @@
       context.pageName = $(document).find("title").text();
       $(this).find('#hs_context').val(JSON.stringify(context));
 
-      $(this).trigger('submit', function () {
-        alert("You've successfully submitted the form. yay!")
-      });
+      if (validateForm()) {
+        alert('submit test');
+        // $(this).trigger('submit', function () {
+        //   alert("You've successfully submitted the form. yay!")
+        // });
+      }
+
       // Prevent infinite loop
       $('#applyForm').one('submit', handleSubmit)
     }
     $('#applyForm').one('submit', handleSubmit)
 
+    // Goes through form fields and makes sure they're kosher
+    function validateForm () {
+      var fields = [
+        'firstname',
+        'lastname',
+        'countryofresidence',
+        'email',
+        'username',
+        'area_of_focus',
+        'tell_us_about_your_project',
+        'amount_requested'
+      ]
+
+      // Clear missing form field border
+      if (window.missingFormFields != null && window.missingFormFields) {
+        window.missingFormFields.forEach(function (item) {
+          $('#' + item).removeClass('error');
+        })
+      }
+
+      var form = $('#applyForm').serializeArray();
+      var missing = [];
+      form.forEach(function (item) {
+        if (fields.indexOf(item.name) > -1) {
+          if (item.value == null || !item.value) {
+            missing.push(item.name)
+            $('#' + item.name).addClass('error');
+          }
+        }
+      });
+
+      // Check if a resume has been pasted or uploaded
+      var upload_resume = $('#upload_resume')[0].files.length
+      var paste_resume = $('#paste_resume').val()
+      // Check if there are either files attached, or if a resume has been pasted
+      if (upload_resume <= 0 && (paste_resume == null || !paste_resume)) {
+        missing = missing.concat(['upload_resume', 'paste_resume']);
+        $('#paste_resume').addClass('error');
+      }
+
+      if (missing.length == 0) {
+        return true;
+      } else {
+        console.log('missing fields', missing);
+        // Stash missing fields for next submit
+        window.missingFormFields = missing;
+        $('#submit-error').removeClass('hidden');
+        return false;
+      }
+    }
   })
 })(jQuery);
+

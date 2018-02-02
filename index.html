@@ -194,12 +194,12 @@
             <label>NAME OF APPLICANT:</label>
             <div class="form-group row">
                 <div class="col-sm">
-                    <label class="sr-only" for="firstName">First Name</label>
-                    <input class="form-control" id="firstName" type="text" name="firstname" placeholder="First">
+                    <label class="sr-only" for="firstname">First Name</label>
+                    <input class="form-control" id="firstname" type="text" name="firstname" placeholder="First">
                 </div>
                 <div class="col-sm">
-                    <label class="sr-only" for="lastName">Last Name</label>
-                    <input class="form-control" type="text" name="lastname" placeholder="Last">
+                    <label class="sr-only" for="lastname">Last Name</label>
+                    <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Last">
                 </div>
             </div>
             <div class="form-group row">
@@ -521,8 +521,10 @@
             <div class="form-group row">
                 <div class="col-sm">
                     <label for="upload_resume" class="">Resume:</label>
-                    <button class="btn btn-primary upload_resume_btn hidden" id="upload_resume_btn">Upload Resume (PDF)</button>
-                    <small id="upload_resume_filename" class="hidden"></small>
+                    <div class="upload_button">
+                        <button class="btn btn-primary upload_resume_btn hidden" id="upload_resume_btn">Upload Resume (PDF)</button>
+                        <small id="upload_resume_filename" class="hidden"></small>
+                    </div>
                     <input type="file" class="form-control" id="upload_resume" name="upload_resume">
                 </div>
             </div>
@@ -665,9 +667,10 @@
             </div>
 
             <div class="form-group row form__submit">
-                <div class="col-sm text-center">
+                <div class="col-sm text-center form__submit--btn">
                     <input id="hs_context" type="hidden" name="hs_context" value="">
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <label id="submit-error" for="submit-btn" class="submit-error hidden">Form is missing required fields.</label>
+                    <button class="btn btn-primary" type="submit" id="submit-btn">Submit</button>
                 </div>
             </div>
         </form>
