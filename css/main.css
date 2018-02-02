@@ -718,7 +718,7 @@ small {
     /* Terms and Conditions: */
     font-family: PostGrotesk-Medium, sans-serif;
     font-size: 18px;
-    color: #5CDB94;
+    color: #5CDB94 !important;
     letter-spacing: 0;
     line-height: 31px;
 }
