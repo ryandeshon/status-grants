@@ -20,7 +20,7 @@ html,
 body {
     background-color: #F5F7F6 !important;
     min-height: 100vh;
-    font-family: "PostGrotesk-Book", sans-serif;
+    font-family: "PostGrotesk-Book", sans-serif !important;
     z-index: 1;
     box-shadow: 0 0 30px 0 rgba(54, 69, 79, 0.86)
 }
@@ -629,7 +629,17 @@ small {
     transition: color 1s ease, background-color 1s ease;
     border: 1px solid #5cdb94;
 }
-
+@media (max-width: 580px) {
+    .row {
+        margin-bottom: 0 !important;
+    }
+    .row div {
+        margin-bottom: 35px;
+    }
+    .form .carat {
+        display: none;
+    }
+}
 
 .faq {
     padding: 60px;

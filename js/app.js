@@ -70,7 +70,7 @@
     $('.more-repo').on('click', function (e) {
       var parent = $(this).closest('.repo');
       parent.next('.hidden').first().removeClass('hidden');
-      $(this).hide();
+      $(this).parent().hide();
     })
 
     // Show more projects
