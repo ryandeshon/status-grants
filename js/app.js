@@ -48,7 +48,7 @@
         $(this).data('toggle', true)
         $(this).find('.question__block--carat').removeClass('flip-reverse')
         $(this).find('.question__block--carat').addClass('flip')
-        $(this).find('.question__block--body').addClass('open')
+        $(this).find('.question__block--body').removeClass('open')
         $('html, body').animate({
           scrollTop: $(this).offset().top - 200
         }, 1000);
@@ -164,7 +164,6 @@
       if (missing.length == 0) {
         return true;
       } else {
-        console.log('missing fields', missing);
         // Stash missing fields for next submit
         window.missingFormFields = missing;
         $('#submit-error').removeClass('hidden');
