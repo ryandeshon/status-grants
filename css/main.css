@@ -591,6 +591,10 @@ small {
     margin-bottom: 35px;
 }
 
+.hidden {
+    display: none;
+}
+
 .form .hidden {
     display: none;
 }
@@ -635,6 +639,19 @@ small {
     .form .carat {
         display: none;
     }
+}
+
+#submitNotice {
+    background-color: #5cdb94;
+    color: #fff;
+    font-family: "PostGrotesk-Book";
+    font-size: 12pt;
+}
+#resetForm {
+    color: #fff;
+    text-decoration: underline;
+    font-family: "PostGrotesk-Book";
+    font-size: 16pt;
 }
 
 .faq {

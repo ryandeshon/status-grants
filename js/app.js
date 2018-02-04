@@ -6,6 +6,11 @@
     $('.upload_resume_btn').show();
     $('#upload_resume_filename').show();
     $('#upload_resume').hide();
+
+    if (localStorage.getItem('formSubmit')) {
+      $('#applyForm').addClass('hidden');
+      $('#submitNotice').removeClass('hidden');
+    }
   })
 
   $(document).ready(function () {
@@ -40,15 +45,15 @@
     $('.question__block').on('click', function (e) {
       var toggle = $(this).data('toggle')
       if (toggle) {
-        $(this).data('toggle', false)
-        $(this).find('.question__block--carat').removeClass('flip')
-        $(this).find('.question__block--carat').addClass('flip-reverse')
-        $(this).find('.question__block--body').addClass('open')
-      } else {
-        $(this).data('toggle', true)
+        $(this).data('toggle', false);
         $(this).find('.question__block--carat').removeClass('flip-reverse')
         $(this).find('.question__block--carat').addClass('flip')
         $(this).find('.question__block--body').removeClass('open')
+      } else {
+        $(this).data('toggle', true);
+        $(this).find('.question__block--carat').removeClass('flip')
+        $(this).find('.question__block--carat').addClass('flip-reverse')
+        $(this).find('.question__block--body').addClass('open')
         $('html, body').animate({
           scrollTop: $(this).offset().top - 200
         }, 1000);
@@ -107,19 +112,24 @@
       var context = {};
       context.pageUrl = window.location.href;
       context.pageName = $(document).find("title").text();
+      context.redirectUrl = window.location.href;
       $(this).find('#hs_context').val(JSON.stringify(context));
 
       if (validateForm()) {
-        alert('submit test');
-        // $(this).trigger('submit', function () {
-        //   alert("You've successfully submitted the form. yay!")
-        // });
+        localStorage.setItem('formSubmit', true)
+        $(this).trigger('submit');
       }
-
       // Prevent infinite loop
       $('#applyForm').one('submit', handleSubmit)
     }
     $('#applyForm').one('submit', handleSubmit)
+
+    $('#resetForm').on('click', function (e) {
+      e.preventDefault();
+      localStorage.removeItem('formSubmit');
+      $('#applyForm').removeClass('hidden');
+      $('#submitNotice').addClass('hidden');
+    })
 
     // Goes through form fields and makes sure they're kosher
     function validateForm () {
@@ -155,6 +165,7 @@
       // Check if a resume has been pasted or uploaded
       var upload_resume = $('#upload_resume')[0].files.length
       var paste_resume = $('#paste_resume').val()
+
       // Check if there are either files attached, or if a resume has been pasted
       if (upload_resume <= 0 && (paste_resume == null || !paste_resume)) {
         missing = missing.concat(['upload_resume', 'paste_resume']);
