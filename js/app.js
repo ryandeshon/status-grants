@@ -17,7 +17,7 @@
     // Trigger nav bar transition
     $(document).on('scroll', function () {
       var target = $('.navigation');
-      if ($(this).scrollTop() > 400) {
+      if ($(this).scrollTop() > 200) {
         target.removeClass('navigation__background--top')
         target.addClass('navigation__background--scroll');
       } else {

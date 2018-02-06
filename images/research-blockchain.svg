@@ -11,17 +11,17 @@
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="GRANTS-SITE-Copy-6" transform="translate(-292.000000, -1875.000000)">
+        <g id="GRANTS-SITE-Copy-8" transform="translate(-292.000000, -1875.000000)">
             <g id="symbol-copy" transform="translate(299.000000, 1877.000000)">
                 <g id="Oval">
                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <use fill="#44318D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="#7EBDFE" fill-rule="evenodd" xlink:href="#path-1"></use>
                 </g>
             </g>
-            <g id="symbol-copy" transform="translate(301.000000, 1895.000000)" fill="#A4B3B6">
+            <g id="symbol-copy" transform="translate(301.000000, 1895.000000)" fill="#98C9FE">
                 <circle id="Oval" cx="26.5" cy="26.5" r="26.5"></circle>
             </g>
-            <g id="symbol-copy" transform="translate(302.000000, 1910.000000)" fill="#8265A7">
+            <g id="symbol-copy" transform="translate(302.000000, 1910.000000)" fill="#ACD3FE">
                 <circle id="Oval" cx="16.5" cy="16.5" r="16.5"></circle>
             </g>
         </g>

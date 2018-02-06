@@ -17,26 +17,25 @@
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="GRANTS-SITE-Copy-6" transform="translate(-689.000000, -1867.000000)">
+        <g id="GRANTS-SITE-Copy-8" transform="translate(-689.000000, -1867.000000)">
             <g id="symbol-copy-2" transform="translate(697.000000, 1880.000000)">
                 <g id="Oval">
                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <use fill="#44318D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="#7EBDFE" fill-rule="evenodd" xlink:href="#path-1"></use>
                 </g>
             </g>
-            <g id="Group-23" transform="translate(741.749233, 1903.224107) rotate(15.000000) translate(-741.749233, -1903.224107) translate(715.749233, 1873.724107)">
+            <g id="Group-23" transform="translate(742.000000, 1903.500000) rotate(15.000000) translate(-742.000000, -1903.500000) translate(716.000000, 1874.000000)">
                 <g id="Rectangle" transform="translate(25.598212, 29.295732) rotate(-360.000000) translate(-25.598212, -29.295732) ">
                     <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
                 </g>
-                <rect id="Rectangle-2" fill="#A4B3B6" transform="translate(25.598212, 10.808134) rotate(-360.000000) translate(-25.598212, -10.808134) " x="8.53273737" y="9.10158653" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
-                <rect id="Rectangle-2" fill="#A4B3B6" transform="translate(25.598212, 18.203173) rotate(-360.000000) translate(-25.598212, -18.203173) " x="8.53273737" y="16.4966256" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
-                <rect id="Rectangle-2" fill="#A4B3B6" transform="translate(25.598212, 25.598212) rotate(-360.000000) translate(-25.598212, -25.598212) " x="8.53273737" y="23.8916646" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
-                <rect id="Rectangle-2" fill="#A4B3B6" transform="translate(25.598212, 32.993251) rotate(-360.000000) translate(-25.598212, -32.993251) " x="8.53273737" y="31.2867037" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
-                <rect id="Rectangle-2" fill="#A4B3B6" transform="translate(25.598212, 40.388290) rotate(-360.000000) translate(-25.598212, -40.388290) " x="8.53273737" y="38.6817427" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
-                <rect id="Rectangle-2" fill="#A4B3B6" transform="translate(25.598212, 47.783329) rotate(-360.000000) translate(-25.598212, -47.783329) " x="8.53273737" y="46.0767818" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 10.808134) rotate(-360.000000) translate(-25.598212, -10.808134) " x="8.53273737" y="9.10158653" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 18.203173) rotate(-360.000000) translate(-25.598212, -18.203173) " x="8.53273737" y="16.4966256" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 25.598212) rotate(-360.000000) translate(-25.598212, -25.598212) " x="8.53273737" y="23.8916646" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 32.993251) rotate(-360.000000) translate(-25.598212, -32.993251) " x="8.53273737" y="31.2867037" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 40.388290) rotate(-360.000000) translate(-25.598212, -40.388290) " x="8.53273737" y="38.6817427" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 47.783329) rotate(-360.000000) translate(-25.598212, -47.783329) " x="8.53273737" y="46.0767818" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
             </g>
-            <rect id="Rectangle-5" fill="#44318D" transform="translate(733.500000, 1933.000000) rotate(15.000000) translate(-733.500000, -1933.000000) " x="702" y="1924" width="63" height="18"></rect>
         </g>
     </g>
 </svg>
