@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2e4e79">
+    <meta name="theme-color" content="#ffffff">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79146816-1"></script>
     <script>
@@ -23,36 +30,38 @@
 
 <body>
     <div class="container-fluid fixed-top navigation navigation__background--top">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                <img class="navigation__logo" src="./images/nav-logo-blue.svg" width="52" height="52" alt="Status Logo">
-                <span class="navigation__name">
-                    <h3 class="navigation__name--title">Status</h3>
-                    <p class="navigation__name--subtitle">R&amp;D GRANTS</p>
-                </span>
-            </a>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img class="navigation__logo" src="./images/nav-logo-blue.svg" width="52" height="52" alt="Status Logo">
+                    <span class="navigation__name">
+                        <h3 class="navigation__name--title">Status</h3>
+                        <p class="navigation__name--subtitle">R&amp;D GRANTS</p>
+                    </span>
+                </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <img src="./images/carat.svg">
-                </span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="./images/carat-nav.svg">
+                    </span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item navigation__link">
-                        <a class="navbar-link faq-btn" href="#faq">FAQs</a>
-                    </li>
-                    <li class="nav-item navigation__link">
-                        <a class="navbar-link apply-btn" href="#apply">Apply</a>
-                    </li>
-                    <li class="nav-item navigation__link">
-                        <a class="navbar-link" href="mailto:support@status.im">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item navigation__link">
+                            <a class="navbar-link faq-btn" href="#faq">FAQs</a>
+                        </li>
+                        <li class="nav-item navigation__link">
+                            <a class="navbar-link apply-btn" href="#apply">Apply</a>
+                        </li>
+                        <li class="nav-item navigation__link">
+                            <a class="navbar-link" href="mailto:support@status.im">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
     <!-- Hero section -->
     <div class="container-fluid hero">
@@ -61,15 +70,23 @@
                 <div class="container">
                     <div class="row">
                         <div class="hero__contents--text col-sm">
-                            <h1 class="title">Fund your work on the blockchain</h1>
-                            <p class="description">Status R&amp;D Grants funds individual researchers and teams researching protocol-layer tech for the decentralized Web—up to $150K USD available.</p>
-                            <a class="apply-btn" href="#apply">
-                                <button type="button" class="btn btn-primary">APPLY</button>
-                            </a>
-                            <p class="hero__contents--slogan">Open to all<br>Open source<br>Open to Ethereum and any other P2P platforms</p>
+                            <div class="hero__contents--upper">
+                                <h1 class="title">Fund your work on the blockchain</h1>
+                                <p class="description">Status R&amp;D Grants funds individual researchers and teams researching protocol-layer tech for the decentralized Web—up to $150K USD available.</p>
+                                <a class="apply-btn" href="#apply">
+                                    <button type="button" class="btn btn-primary">APPLY</button>
+                                </a>
+                            </div>
+                            <div class="hero__contents--lower">
+                                <p class="hero__contents--slogan">
+                                    <span>Open to all</span>
+                                    <span>Open source</span>
+                                    <span>Open to Ethereum and any other P2P platforms</span>
+                                </p>
+                            </div>
                         </div>
                         <div class="hero__contents--image col-sm">
-                            <img src="./images/hero-img-2.svg" />
+                            <img src="./images/hero-img.svg" />
                         </div>
                     </div>
                 </div>
@@ -86,30 +103,42 @@
                     <div class="row">
                         <div class="col-sm">
                             <div class="cta__contents--block">
-                                <h3 class="cta__contents--header">
-                                    Committed to a decentralized Web
-                                </h3>
-                                <p class="cta__contents--text">Blockchain-based decentralization is a movement transforming industries around the world—and
-                                    Status wants to support talented computer science researchers developing protocol-level
-                                    tech that’ll make it more useful to society.
-                                    <a class="cta__contents--link" href="https://status.im/">Learn more about Status</a>
-                                </p>
+                                <img class="cta__contents--logo" src="./images/globe.svg">
+                                <div>
+                                    <h3 class="cta__contents--header">
+                                        Committed to a decentralized Web
+                                    </h3>
+                                    <p class="cta__contents--text">Blockchain-based decentralization is a movement transforming industries around the world—and
+                                        Status wants to support talented computer science researchers developing protocol-level
+                                        tech that’ll make it more useful to society.
+                                        <a class="cta__contents--link" href="https://status.im/">Learn more about Status</a>
+                                    </p>
+                                </div>
                             </div>
                             <div class="cta__contents--block">
-                                <h3 class="cta__contents--header">
-                                    Building the foundation together
-                                </h3>
-                                <p class="cta__contents--text">The blockchain is reshaping expectations about how people, organizations, even governments,
-                                    operate. But it’s still in its infancy. Scalability, security, and other challenges require
-                                    more research and development by people like you. Our R&amp;D Grants are available to
-                                    support your work making the benefits of the blockchain accessible to all. </p>
+                                <img class="cta__contents--logo" src="./images/blocks.svg">
+                                <div>
+                                    <h3 class="cta__contents--header">
+                                        Building the foundation together
+                                    </h3>
+                                    <p class="cta__contents--text">The blockchain is reshaping expectations about how people, organizations, even governments,
+                                        operate. But it’s still in its infancy. Scalability, security, and other challenges require
+                                        more research and development by people like you. Our R&amp;D Grants are available to
+                                        support your work making the benefits of the blockchain accessible to all.
+                                    </p>
+                                </div>
                             </div>
                             <div class="cta__contents--block">
-                                <h3 class="cta__contents--calloutheader">Our R&D Grants are available to support your work making the benefits of the blockchain accessible
+                                <h3 class="cta__contents--calloutheader">Our R&amp;D Grants are available to support your work making the benefits of the blockchain accessible
                                     to all.</h3>
                             </div>
                         </div>
                         <div class="col-sm">
+                            <div class="cta__gears">
+                                <img class="cta__gears--top-left" src="./images/gears/top-left.svg">
+                                <img class="cta__gears--top-right" src="./images/gears/top-right.svg">
+                                <img class="cta__gears--bottom" src="./images/gears/bottom.svg">
+                            </div>
                             <!-- <img src="./images/lock.svg" alt="Lock and key"> -->
                         </div>
                     </div>
@@ -119,14 +148,14 @@
     </div>
 
     <!-- Start partnership section -->
-    <!-- <div class="container partnership">
+    <div class="container partnership">
         <div class="row">
             <div class="col-sm partnership__block">
-                <p class="partnership__block--text">Partnership with:</p>
+                <p class="partnership__block--text">Partnerships</p>
                 <img class="partnership__block--image" src="./images/ic3-logo.png" alt="ic3 Partnership Logo" />
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- End partnership Section -->
 
     <div class="container apply">
@@ -185,16 +214,18 @@
                 <p class="form__block--text">
                     <strong>Deadline to apply:</strong> February 28, 2018</p>
                 <p class="form__block--text">Grant recipients notified by April 1, 2018</p>
-
-                <small class="form__block--small">All fields are required unless otherwise noted</small>
             </div>
         </div>
 
         <div id="submitNotice" class="alert alert-success hidden" role="alert">
-            Thank you, your application was submitted. <a href="#" id="resetForm">Submit another application.</a>
+            <h2 class="submit-notice__header">Thank you for applying to Status R&amp;D Grants.</h2>
+            <p class="submit-notice__text">Your application will be considered carefully, and we'll</br>respond by April 1, 2018.</p>
         </div>
 
         <form method="POST" enctype="multipart/form-data" id="applyForm" action="https://forms.hubspot.com/uploads/form/v2/3954379/3d34bd51-b927-4a50-bc12-cd776541a1e7">
+            <div class="form__note">
+                <small>All fields are required unless otherwise noted</small>
+            </div>
             <label>NAME OF APPLICANT:</label>
             <div class="form-group row">
                 <div class="col-sm">
@@ -787,21 +818,21 @@
         </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-sm">
                 <hr class="seperator" />
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="container terms">
+    <!-- <div class="container terms">
         <div class="row">
             <div class="col-sm terms__block">
                 <button class="terms__block--link btn btn-link" data-toggle="modal" data-target="#tcmodal">Terms and Conditions</button>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container-fluid footer">
         <div class="row">

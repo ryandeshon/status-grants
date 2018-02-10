@@ -1,63 +1,82 @@
 
-<svg width="376px" height="378px" viewBox="0 0 376 378" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="419px" height="485px" viewBox="0 0 419 485" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
     <desc>Created with Sketch.</desc>
     <defs>
-        <filter x="-5.6%" y="-3.1%" width="111.2%" height="109.5%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.275532156 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-        <ellipse id="path-2" cx="128.659787" cy="153.596237" rx="40.2316389" ry="40.2667399"></ellipse>
-        <filter x="-9.9%" y="-6.2%" width="117.4%" height="117.4%" filterUnits="objectBoundingBox" id="filter-3">
-            <feOffset dx="-1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.234516531 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-        <filter x="-8.6%" y="-8.5%" width="117.2%" height="124.6%" filterUnits="objectBoundingBox" id="filter-4">
-            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.200747283 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
+        <linearGradient x1="50%" y1="98.3507864%" x2="50%" y2="21.2484383%" id="linearGradient-1">
+            <stop stop-color="#71B5FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#71B5FF" offset="100%"></stop>
+        </linearGradient>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.503736413">
-        <g id="Group-35" transform="translate(-11.000000, 1.000000)">
-            <g id="Group-21" transform="translate(68.000000, 0.000000)">
-                <g id="Group-9" filter="url(#filter-1)" transform="translate(129.000000, 215.203662) rotate(-360.000000) translate(-129.000000, -215.203662) translate(0.000000, 62.203662)">
-                    <g id="Group-2" transform="translate(129.140139, 152.775465) rotate(-29.000000) translate(-129.140139, -152.775465) translate(57.140139, 18.275465)">
-                        <rect id="Rectangle" fill="#423F3F" transform="translate(71.650187, 134.671635) rotate(-360.000000) translate(-71.650187, -134.671635) " x="0.239027795" y="0.78472447" width="142.822318" height="267.77382" rx="10"></rect>
-                        <rect id="Rectangle-5" fill="#FFFFFF" x="6.51481803" y="36.2400659" width="131.32979" height="199.320363"></rect>
-                        <rect id="Rectangle-6" fill="#74797F" x="53.0696846" y="14.093359" width="36.208475" height="10.066685" rx="5.03334249"></rect>
-                        <rect id="Rectangle-6-Copy" fill="#74797F" x="61.5922771" y="246.633782" width="20.1158194" height="10.066685" rx="5.03334249"></rect>
-                    </g>
-                    <g id="Oval" transform="translate(128.659787, 153.596237) rotate(-43.000000) translate(-128.659787, -153.596237) ">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
-                        <use fill="#4A4A4A" fill-rule="evenodd" xlink:href="#path-2"></use>
-                    </g>
-                    <g id="Group-5" transform="translate(127.533044, 152.985191) rotate(-28.000000) translate(-127.533044, -152.985191) translate(115.533044, 137.985191)" stroke="#F4F2F7" stroke-linecap="round" stroke-width="3">
-                        <path d="M12.6971069,1.21374595 L12.6971069,29.2945281" id="Line"></path>
-                        <polyline id="Rectangle-8" transform="translate(11.877099, 11.876975) rotate(-45.000000) translate(-11.877099, -11.876975) " points="3.67701967 3.67449117 20.0771782 3.67449117 20.0771782 20.0794593"></polyline>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GRANTS-SITE-Copy-8" transform="translate(-752.000000, -135.000000)">
+            <g id="Group-5" transform="translate(752.000000, 135.000000)">
+                <circle id="Oval-7-Copy-17" fill="#FFFFFF" opacity="0.200000003" cx="207" cy="15" r="13"></circle>
+                <circle id="Oval-7-Copy-20" fill="#FFFFFF" opacity="0.200000003" cx="157" cy="14" r="8"></circle>
+                <circle id="Oval-7-Copy-21" fill="#FFFFFF" opacity="0.200000003" cx="257" cy="14" r="8"></circle>
+                <path d="M160,19 L160,19 C168.105021,19 174.675438,25.5704175 174.675438,33.6754382 L174.675438,54 C174.675438,62.2842712 181.391167,69 189.675438,69 L204,69" id="Line-3-Copy-6" stroke="#B69CDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(182.000000, 44.000000) scale(-1, 1) rotate(-270.000000) translate(-182.000000, -44.000000) "></path>
+                <path d="M209,19 L209,19 C217.105021,19 223.675438,25.5704175 223.675438,33.6754382 L223.675438,54 C223.675438,62.2842712 230.391167,69 238.675438,69 L253,69" id="Line-3-Copy-7" stroke="#B69CDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(231.000000, 44.000000) rotate(-270.000000) translate(-231.000000, -44.000000) "></path>
+                <path d="M207,25 L207,69" id="Line-3-Copy-8" stroke="#B69CDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Combined-Shape-Copy" transform="translate(176.000000, 147.000000)" fill="url(#linearGradient-1)">
+                    <rect id="Combined-Shape" x="0" y="0" width="60" height="344"></rect>
+                </g>
+                <polygon id="Triangle-Copy-5" fill="#71B5FF" points="207 57 282 158 132 158"></polygon>
+                <g id="Group-10-Copy-3" transform="translate(300.000000, 53.000000)">
+                    <rect id="Rectangle-13" fill="#EFBBBB" x="0" y="0" width="95" height="45" rx="5"></rect>
+                    <ellipse id="Oval-3" fill="#F4DAD6" cx="22.3798077" cy="22.95" rx="14.1586538" ry="13.95"></ellipse>
+                    <g id="Group-9" transform="translate(42.019231, 9.900000)" fill="#F4DAD6">
+                        <rect id="Rectangle-10" x="0" y="0" width="42.0192308" height="5.4" rx="2.7"></rect>
+                        <rect id="Rectangle-10" x="0" y="9.9" width="42.0192308" height="5.4" rx="2.7"></rect>
+                        <rect id="Rectangle-10-Copy" x="0" y="19.8" width="14.6153846" height="5.4" rx="2.7"></rect>
                     </g>
                 </g>
-                <g id="Group" filter="url(#filter-4)" transform="translate(200.997683, 97.930999) rotate(24.000000) translate(-200.997683, -97.930999) translate(107.997683, 32.930999)">
-                    <rect id="Rectangle-2" fill="#9B9B9B" x="0" y="0" width="185.321791" height="129.599248" rx="6"></rect>
-                    <rect id="Rectangle-3" fill="#FFFFFF" x="22.1580403" y="26.3248473" width="32.2298768" height="32.399812" rx="4"></rect>
-                    <rect id="Rectangle-4" fill="#B9B8B8" x="22.1580403" y="72.899577" width="138.991344" height="10.1249413" rx="5.06247063"></rect>
-                    <rect id="Rectangle-4" fill="#B9B8B8" x="22.1580403" y="93.1494596" width="58.4166516" height="10.1249413" rx="5.06247063"></rect>
+                <g id="Group-3-Copy" transform="translate(194.000000, 0.000000)">
+                    <circle id="Oval-7-Copy-10" fill="#6ED4D3" cx="13" cy="13" r="13"></circle>
+                    <circle id="Oval-7-Copy-13" fill="#A6EEEE" cx="13" cy="13" r="7.42857143"></circle>
                 </g>
-            </g>
-            <g id="Group-3" transform="translate(37.000000, 112.500000) rotate(-60.000000) translate(-37.000000, -112.500000) translate(0.000000, 92.000000)" stroke="#E7E4EC" stroke-linecap="round" stroke-width="3">
-                <path d="M52.703149,40.8901798 C49.3100443,35.4831202 43.2696856,31.8849068 36.3833333,31.8849068 C29.8583434,31.8849068 24.0928893,35.1153949 20.6192871,40.0541725" id="Oval-2"></path>
-                <path d="M62.3293825,30.2601981 C56.9001875,21.6085405 47.2352089,15.8511578 36.2165839,15.8511578 C25.7761628,15.8511578 16.5510499,21.0201553 10.9930536,28.9225304" id="Oval-2-Copy"></path>
-                <path d="M73.0704144,20.4906508 C65.3693329,8.21864346 51.659973,0.0520417622 36.0305235,0.0520417622 C21.2212315,0.0520417622 8.13580239,7.38404423 0.252021679,18.5932262" id="Oval-2-Copy-2"></path>
+                <g id="Group-2-Copy" transform="translate(244.000000, 0.000000)">
+                    <circle id="Oval-7-Copy-12" fill="#DCA8A0" cx="13" cy="13" r="13"></circle>
+                    <circle id="Oval-7-Copy-14" fill="#FCCBC4" cx="13" cy="13" r="7.42857143"></circle>
+                </g>
+                <path d="M66,271 L104.684921,271 C112.969193,271 119.684921,277.715729 119.684921,286 L119.684921,301 C119.684921,309.284271 126.40065,316 134.684921,316 L176,316" id="Line-Copy" stroke="#B69CDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M238,316.5 L329.97188,316.5" id="Line-4-Copy" stroke="#B69CDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M275,308 L275,261.569458 C275,253.285187 281.715729,246.569458 290,246.569458 L357,246.569458 C365.284271,246.569458 372,239.853729 372,231.569458 L372,208" id="Line-2-Copy" stroke="#B69CDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M58,131 L58,162 C58,170.284271 64.7157288,177 73,177 L87,177" id="Line-3-Copy-9" stroke="#B69CDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M79,-6 L79,67 C79,75.2842712 85.7157288,82 94,82 L127,82" id="Line-3-Copy-10" stroke="#B69CDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(103.000000, 38.000000) rotate(-270.000000) translate(-103.000000, -38.000000) "></path>
+                <path d="M18,92 L18,188 C18,196.284271 24.7157288,203 33,203 L58,203" id="Line-3-Copy-11" stroke="#B69CDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(38.000000, 147.500000) scale(-1, 1) translate(-38.000000, -147.500000) "></path>
+                <circle id="Oval-7-Copy-22" fill="#979BFA" cx="276" cy="317" r="9"></circle>
+                <circle id="Oval-7-Copy-23" fill="#FFFFFF" cx="275.5" cy="316.5" r="4.5"></circle>
+                <circle id="Oval-7-Copy-24" fill="#979BFA" cx="333" cy="317" r="9"></circle>
+                <circle id="Oval-7-Copy-25" fill="#FFFFFF" cx="333.5" cy="316.5" r="4.5"></circle>
+                <g id="Group-10-Copy-4" transform="translate(324.000000, 177.000000)">
+                    <rect id="Rectangle-13" fill="#979BFA" x="0" y="0" width="95" height="37" rx="5"></rect>
+                    <ellipse id="Oval-3" fill="#B8BBFD" cx="18.2692308" cy="18.5" rx="10.9615385" ry="11.1"></ellipse>
+                    <g id="Group-9" transform="translate(33.798077, 8.325000)" fill="#B8BBFD">
+                        <rect id="Rectangle-10" x="0" y="0" width="42.0192308" height="5.55" rx="2.775"></rect>
+                        <rect id="Rectangle-10" x="0" y="10.175" width="23.75" height="5.55" rx="2.775"></rect>
+                    </g>
+                </g>
+                <g id="Group-10-Copy-5" transform="translate(6.000000, 50.000000)">
+                    <rect id="Rectangle-13" fill="#97E1E1" x="0" y="0" width="104" height="45" rx="5"></rect>
+                    <ellipse id="Oval-3" fill="#B9F7F7" cx="22.3508772" cy="22.95" rx="14.1403509" ry="13.95"></ellipse>
+                    <g id="Group-9" transform="translate(41.964912, 9.900000)" fill="#B9F7F7">
+                        <rect id="Rectangle-10" x="0" y="0" width="51.0877193" height="5.4" rx="2.7"></rect>
+                        <rect id="Rectangle-10" x="0" y="9.9" width="51.0877193" height="5.4" rx="2.7"></rect>
+                        <rect id="Rectangle-10-Copy" x="0" y="19.8" width="23.7192982" height="5.4" rx="2.7"></rect>
+                    </g>
+                </g>
+                <g id="Group-5-Copy" transform="translate(28.000000, 251.000000)">
+                    <circle id="Oval-7-Copy-2" fill="#979BFA" cx="19.5" cy="19.5" r="19.5"></circle>
+                    <circle id="Oval-7-Copy-2" fill="#C4C7FF" cx="19.5" cy="19.5" r="8.61627907"></circle>
+                </g>
+                <g id="Group-4-Copy" transform="translate(145.000000, 0.000000)">
+                    <circle id="Oval-7-Copy-11" fill="#8B8FF9" cx="13" cy="13" r="13"></circle>
+                    <circle id="Oval-7-Copy-11" fill="#BCBFFF" cx="13" cy="13" r="7.42857143"></circle>
+                </g>
+                <circle id="Oval-7-Copy-26" fill="#71B5FF" cx="10.5" cy="202.5" r="10.5"></circle>
+                <circle id="Oval-7-Copy-27" fill="#FFFFFF" cx="9.5" cy="201.5" r="4.5"></circle>
+                <circle id="Oval-7-Copy-28" fill="#71B5FF" cx="97.5" cy="176.5" r="10.5"></circle>
+                <circle id="Oval-7-Copy-29" fill="#FFFFFF" cx="97.5" cy="176.5" r="4.5"></circle>
             </g>
         </g>
     </g>
