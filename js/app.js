@@ -16,14 +16,22 @@
   $(document).ready(function () {
     // Trigger nav bar transition
     $(document).on('scroll', function () {
+      // Trigger navigation
       var target = $('.navigation');
-      if ($(this).scrollTop() > 200) {
+      if ($(this).scrollTop() > 25) {
         target.removeClass('navigation__background--top')
         target.addClass('navigation__background--scroll');
       } else {
         target.removeClass('navigation__background--scroll');
         target.addClass('navigation__background--top')
       }
+
+      // Spin gears
+      var pos = $(this).scrollTop() % 360;
+      console.log('rotate ' + pos + ' deg')
+      $('.cta__gears--top-left').css('transform', 'rotate(' + pos + 'deg)');
+      $('.cta__gears--top-right').css('transform', 'rotate(-' + pos + 'deg)');
+      $('.cta__gears--bottom').css('transform', 'rotate(' + pos + 'deg)');
     })
 
     // Smooth scroll to apply section
