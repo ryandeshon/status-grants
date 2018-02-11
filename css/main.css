@@ -171,6 +171,9 @@ small {
     align-items: center;
     flex-grow: 0;
 }
+.hero__contents--image img {
+    max-width: 100%;
+}
 .hero__contents .row .title {
     max-width: 400px;
     font-size: 26px;
@@ -367,6 +370,7 @@ small {
     top: 40px;
     left: 5px;
     transition: all ease;
+    max-width: 40%;
 }
 .cta__gears--top-right {
     width: 157px !important;
@@ -375,6 +379,7 @@ small {
     top: 0;
     right: 0;
     transition: all ease;
+    max-width: 60%;
 }
 .cta__gears--bottom {
     position: absolute;
@@ -383,6 +388,7 @@ small {
     width: 395px;
     height: 395px;
     transition: all ease;
+    max-width: 100%;
 }
 
 
