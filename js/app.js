@@ -27,8 +27,7 @@
       }
 
       // Spin gears
-      var pos = $(this).scrollTop() % 360;
-      console.log('rotate ' + pos + ' deg')
+      var pos = $(this).scrollTop() % 1080;
       $('.cta__gears--top-left').css('transform', 'rotate(' + pos + 'deg)');
       $('.cta__gears--top-right').css('transform', 'rotate(-' + pos + 'deg)');
       $('.cta__gears--bottom').css('transform', 'rotate(' + pos + 'deg)');
