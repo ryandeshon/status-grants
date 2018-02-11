@@ -173,6 +173,7 @@ small {
 }
 .hero__contents--image img {
     max-width: 100%;
+    min-width: 300px;
 }
 .hero__contents .row .title {
     max-width: 400px;
