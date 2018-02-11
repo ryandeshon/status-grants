@@ -232,9 +232,9 @@ small {
     .hero__contents .container {
         height: auto;
     }
-    .hero__contents--image {
+    /* .hero__contents--image {
         display: none;
-    }
+    } */
     .hero__contents--text {
         display: flex;
         flex-direction: column;
@@ -331,9 +331,9 @@ small {
     margin-left: 20%;
 }
 @media (max-width: 1024px) {
-    .cta__gears--container {
+    /* .cta__gears--container {
         display: none;
-    }
+    } */
     .cta__contents--block {
         flex-direction: column;
         justify-content: center;
@@ -351,6 +351,12 @@ small {
     .question__block--heading,
     .question__block--body {
         margin-bottom: 0 !important;
+    }
+    .cta__contents .row div {
+        min-width: 100%;
+    }
+    .cta__gears {
+        min-height: 600px;
     }
 }
 
