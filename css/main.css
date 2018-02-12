@@ -52,7 +52,7 @@ small {
 }
 
 .navigation__background--scroll {
-    height: 90px;
+    height: auto;
     border-bottom: 1px solid rgb(211, 211, 211);
     background-color: #ffffff;
     transition: height 1s ease-in-out;
