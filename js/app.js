@@ -11,6 +11,8 @@
       $('#applyForm').addClass('hidden');
       $('#submitNotice').removeClass('hidden');
     }
+
+    new Vivus('hero-img', {type: 'delayed', start: 'inViewport', duration: 200});
   })
 
   $(document).ready(function () {
