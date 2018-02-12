@@ -502,6 +502,7 @@ small {
 }
 .research__options--box {
     min-width: 180px;
+    max-width: 189px !important;
     min-height: 200px;
     padding: 20px;
     margin: 10px;
