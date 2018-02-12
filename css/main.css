@@ -302,16 +302,16 @@ small {
 }
 .cta__contents--header {
     font-family: "PostGrotesk-Medium", sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     color: #FFFFFF;
     letter-spacing: 0;
-    line-height: 34px;
+    line-height: 42px;
     opacity: 0.9;
 }
 
 .cta__contents--text {
     font-family: "PostGrotesk-Book", sans-serif;
-	font-size: 18px;
+	font-size: 16px;
     opacity: 0.9;
     color: #FFFFFF;
     letter-spacing: 0;
