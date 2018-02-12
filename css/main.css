@@ -318,6 +318,9 @@ small {
     line-height: 25px;
 }
 .cta__contents--link {
+    color: #79A9DD;
+}
+.cta__contents--link:hover {
     color: #7FBEFF;
 }
 .cta__contents--calloutheader {
@@ -610,6 +613,9 @@ small {
     font-size: 13px;
 }
 
+.form .form-control::placeholder {
+    color: rgba(151, 166, 188, 0.75) !important;
+}
 
 .form input,
 .form input:active,
@@ -623,7 +629,7 @@ small {
 	font-size: 16px;
 	line-height: 1.56;
 	text-align: left;
-    color: #494949;
+    color: #97A6BC;
     border-radius: 8px;
     border: none;
 }
