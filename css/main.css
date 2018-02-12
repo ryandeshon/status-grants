@@ -52,13 +52,11 @@ small {
 }
 
 .navigation__background--scroll {
-    height: auto;
     border-bottom: 1px solid rgb(211, 211, 211);
     background-color: #ffffff;
     transition: height 1s ease-in-out;
 }
 .navigation__background--top {
-    height: 120px;
 }
 
 .navigation__background--scroll .navbar {
@@ -67,7 +65,6 @@ small {
 }
 
 .navigation .navbar {
-    min-height: 120px;
     transition: height 1s ease-in-out;
 }
 .navigation .navbar-brand {
