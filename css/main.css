@@ -580,20 +580,28 @@ small {
 
 .form .more-icon {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 20px;
     height: 100%;
-    color: #fff;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
     opacity: 0.75;
+    font-family: PostGrotesk-Medium, sans-serif;
+    font-size: 13px;
+    color: #494949;
+    letter-spacing: 0;
+    line-height: 25px;
+    margin-top: 1rem;
+}
+
+.form .more-icon img {
+    margin-right: 1rem;
 }
 
 .form .more-projects-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
