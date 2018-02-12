@@ -955,12 +955,34 @@ small {
     cursor: pointer;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     html, body {
         margin-bottom: 0 !important;
     }
     .footer {
         position: inherit;
         height: auto;
+    }
+    .footer__left_block {
+        order: 99;
+        align-items: center;
+    }
+    .footer__left_block--address_container {
+        margin-top: 2rem;
+    }
+    .footer__left_block--address {
+        text-align: center;
+    }
+    .footer__left_block--logo_container {
+        display: none;
+    }
+    .footer__right_block {
+        align-items: center;
+    }
+    .footer__right_block--icon {
+        display: none;
+    }
+    .footer__right_block--link {
+        justify-content: center;
     }
 }
