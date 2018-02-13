@@ -9,8 +9,8 @@
             <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.145125679 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <rect id="path-3" x="3.63797881e-12" y="0" width="51.1964242" height="58.5914633" rx="8"></rect>
-        <filter x="-28.3%" y="-16.2%" width="156.6%" height="149.5%" filterUnits="objectBoundingBox" id="filter-4">
+        <path d="M8,0 L43.1964242,0 C47.6147022,-8.11624501e-16 51.1964242,3.581722 51.1964242,8 L51.1964242,53 L3.63797881e-12,53 L3.63797881e-12,8 C3.63743772e-12,3.581722 3.581722,8.11624501e-16 8,0 Z" id="path-3"></path>
+        <filter x="-28.3%" y="-17.9%" width="156.6%" height="154.7%" filterUnits="objectBoundingBox" id="filter-5">
             <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.594570879 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
@@ -24,18 +24,22 @@
                     <use fill="#7EBDFE" fill-rule="evenodd" xlink:href="#path-1"></use>
                 </g>
             </g>
-            <g id="Group-23" transform="translate(742.000000, 1903.500000) rotate(15.000000) translate(-742.000000, -1903.500000) translate(716.000000, 1874.000000)">
-                <g id="Rectangle" transform="translate(25.598212, 29.295732) rotate(-360.000000) translate(-25.598212, -29.295732) ">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            <g id="Group-23" transform="translate(742.776457, 1900.602223) rotate(15.000000) translate(-742.776457, -1900.602223) translate(716.776457, 1874.102223)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Rectangle" transform="translate(25.598212, 26.500000) rotate(-360.000000) translate(-25.598212, -26.500000) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
                 </g>
-                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 10.808134) rotate(-360.000000) translate(-25.598212, -10.808134) " x="8.53273737" y="9.10158653" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
-                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 18.203173) rotate(-360.000000) translate(-25.598212, -18.203173) " x="8.53273737" y="16.4966256" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
-                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 25.598212) rotate(-360.000000) translate(-25.598212, -25.598212) " x="8.53273737" y="23.8916646" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
-                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 32.993251) rotate(-360.000000) translate(-25.598212, -32.993251) " x="8.53273737" y="31.2867037" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
-                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 40.388290) rotate(-360.000000) translate(-25.598212, -40.388290) " x="8.53273737" y="38.6817427" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
-                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" transform="translate(25.598212, 47.783329) rotate(-360.000000) translate(-25.598212, -47.783329) " x="8.53273737" y="46.0767818" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" mask="url(#mask-4)" transform="translate(25.598212, 10.808134) rotate(-360.000000) translate(-25.598212, -10.808134) " x="8.53273737" y="9.10158653" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" mask="url(#mask-4)" transform="translate(25.598212, 18.203173) rotate(-360.000000) translate(-25.598212, -18.203173) " x="8.53273737" y="16.4966256" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" mask="url(#mask-4)" transform="translate(25.598212, 25.598212) rotate(-360.000000) translate(-25.598212, -25.598212) " x="8.53273737" y="23.8916646" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" mask="url(#mask-4)" transform="translate(25.598212, 32.993251) rotate(-360.000000) translate(-25.598212, -32.993251) " x="8.53273737" y="31.2867037" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" mask="url(#mask-4)" transform="translate(25.598212, 40.388290) rotate(-360.000000) translate(-25.598212, -40.388290) " x="8.53273737" y="38.6817427" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
+                <rect id="Rectangle-2" fill="#B7B7B7" opacity="0.499150815" mask="url(#mask-4)" transform="translate(25.598212, 47.783329) rotate(-360.000000) translate(-25.598212, -47.783329) " x="8.53273737" y="46.0767818" width="34.1309495" height="3.41309495" rx="1.70654747"></rect>
             </g>
+            <rect id="Rectangle-5" fill="#7EBDFE" transform="translate(733.000000, 1933.000000) rotate(15.000000) translate(-733.000000, -1933.000000) " x="701" y="1924" width="64" height="18"></rect>
         </g>
     </g>
 </svg>

@@ -1,3 +1,16 @@
+;(function($, win) {
+  $.fn.inViewport = function(cb) {
+     return this.each(function(i,el){
+       function visPx(){
+         var H = $(this).height(),
+             r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+         return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));
+       } visPx();
+       $(win).on("resize scroll", visPx);
+     });
+  };
+}(jQuery, window));
+
 (function ($) {
 
   // If javascript enabled, hide the html file
@@ -11,8 +24,6 @@
       $('#applyForm').addClass('hidden');
       $('#submitNotice').removeClass('hidden');
     }
-
-    new Vivus('hero-img', {type: 'delayed', start: 'inViewport', duration: 200});
   })
 
   $(document).ready(function () {
@@ -33,6 +44,18 @@
       $('.cta__gears--top-left').css('transform', 'rotate(' + pos + 'deg)');
       $('.cta__gears--top-right').css('transform', 'rotate(-' + pos + 'deg)');
       $('.cta__gears--bottom').css('transform', 'rotate(-' + pos + 'deg)');
+
+      $('.research__options').inViewport(function (px) {
+        if (px > 200) {
+          var delay = 0;
+          $('.research__options--box').each(function (i, ele) {
+            setTimeout(function () {
+              $(ele).addClass('fade-up-boxes');
+            }, delay)
+            delay = delay + 300
+          })
+        }
+      })
     })
 
     // Smooth scroll to apply section

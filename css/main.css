@@ -225,6 +225,22 @@ small {
     margin-right: 20px;
 }
 
+@keyframes fade-up {
+    0% {
+        opacity: 0.75;
+        transform: translate(132px, 97px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(132px, 57px);
+    }
+}
+#arrow {
+    animation-name: fade-up;
+    animation-duration: 2s;
+    transition: all 2s ease-in-out;
+}
+
 @media (max-width: 1024px) {
     .hero__row {
         height: auto;
@@ -384,14 +400,44 @@ small {
 }
 .cta__gears--bottom {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     right: -82px;
     width: 395px;
     height: 395px;
     transition: all ease;
     max-width: 100%;
 }
-
+@media (max-width: 1200px) {
+    .cta__gears--bottom {
+        bottom: 150px;
+    }
+}
+@media (max-width: 992px) {
+    .cta__gears--bottom {
+        bottom: 40px;
+        right: 22px;
+    }
+    .cta__gears--top-right {
+        right: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .cta__gears--bottom {
+        bottom: 40px;
+        right: 22px;
+    }
+    .cta__gears--top-right {
+        right: 80px;
+    }
+    .cta__gears--top-left {
+        left: -80px;
+    }
+}
+@media (max-width: 576px) {
+    .cta__gears--top-left {
+        left: -60px;
+    }
+}
 
 
 .partnership__line {
@@ -462,16 +508,17 @@ small {
 .apply__block--header {
     font-family: "PostGrotesk-Medium", sans-serif;
     margin-bottom: 12px;
-    font-size: 26px;
+    font-size: 24px;
     color: #314F7A;
     letter-spacing: 0;
     line-height: 31px;
 }
 .apply__block--text {
-    font-family: "PostGrotesk-Book", sans-serif;
+    font-family: PostGrotesk-Book, sans-serif;
     color: #97A6BC;
     letter-spacing: 0;
     line-height: 25px;
+    font-size: 18px;
 }
 
 .research {
@@ -500,6 +547,23 @@ small {
     align-content: center;
     margin-bottom: 40px;
 }
+
+@keyframes fade-up-boxes {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, 40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.fade-up-boxes {
+    animation: fade-up-boxes 2s;
+    animation-fill-mode: forwards;
+}
+
 .research__options--box {
     min-width: 180px;
     max-width: 189px !important;
@@ -513,8 +577,10 @@ small {
     border-radius: 8px;
 	background-color: #ffffff;
     box-shadow: 0 5px 16px 0 rgba(230, 235, 238, 0.67);
-
+    transform: translate(0, 40px);
+    opacity: 0.5;
 }
+
 .research__options--icon {
     margin-bottom: 20px;
 }
