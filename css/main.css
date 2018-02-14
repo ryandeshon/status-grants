@@ -224,21 +224,69 @@ small {
 .hero__contents--slogan span {
     margin-right: 20px;
 }
-
-@keyframes fade-up {
+/* Hero Image Animation */
+@keyframes fade-up-top-left {
     0% {
-        opacity: 0.75;
-        transform: translate(132px, 97px);
+        opacity: 0;
+        transform: translate(0, 80px);
     }
     100% {
         opacity: 1;
-        transform: translate(132px, 57px);
+        transform: translate(0, 50px);
     }
 }
+@keyframes fade-up-top-right {
+    0% {
+        opacity: 0;
+        transform: translate(300px, 90px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(300px, 60px);
+    }
+}
+@keyframes fade-up-bottom-right {
+    0% {
+        opacity: 0;
+        transform: translate(325px, 220px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(325px, 180px);
+    }
+}
+@keyframes arrow {
+    0% {
+        opacity: 0.25%;
+        transform: translate(132px, 150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(132px, 60px);
+    }
+}
+#Top-Left-Box {
+    animation: fade-up-top-left 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+#Top-Right-Box {
+    animation: fade-up-top-right 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+#Bottom-Right-Box {
+    animation: fade-up-bottom-right 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
 #arrow {
-    animation-name: fade-up;
-    animation-duration: 2s;
-    transition: all 2s ease-in-out;
+    animation: arrow 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 @media (max-width: 1024px) {
