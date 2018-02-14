@@ -56,8 +56,6 @@ small {
     background-color: #ffffff;
     transition: height 1s ease-in-out;
 }
-.navigation__background--top {
-}
 
 .navigation__background--scroll .navbar {
     min-height: 100% !important;
@@ -67,6 +65,9 @@ small {
 .navigation .navbar {
     transition: height 1s ease-in-out;
 }
+.navigation .container {
+    padding: 0;
+}
 .navigation .navbar-brand {
     display: flex;
     flex-direction: row;
@@ -74,6 +75,13 @@ small {
 }
 .navigation .navbar-collapse {
     flex-grow: 0;
+}
+.navigation .navbar-toggler .navbar-toggler-icon {
+    transition: all 500ms ease;
+}
+.navigation .navbar-toggler.collapsed .navbar-toggler-icon{
+    transform: rotate(180deg);
+    transition: all 500ms ease;
 }
 .navigation__name {
     margin-left: 10px;
@@ -102,6 +110,9 @@ small {
 .navigation__link {
     width: 120px;
 }
+.navigation__link:nth-child(3) {
+    width: auto;
+}
 .navigation__link a {
     font-family: "PostGrotesk-Medium", sans-serif;
 	font-size: 14px;
@@ -119,6 +130,9 @@ small {
     .navigation .container {
         padding-left: 0 !important;
         padding-right: 0 !important;
+    }
+    .navigation {
+        border-bottom: 1px solid rgb(211, 211, 211);
     }
     .navigation .container {
         background-color: white;
@@ -294,6 +308,9 @@ small {
         height: auto;
         max-height: 1200px;
     }
+    .hero__contents {
+        margin-top: 100px;
+    }
     .hero__contents .container {
         height: auto;
     }
@@ -320,12 +337,18 @@ small {
     .hero__contents--upper {
         align-items: center;
     }
+    .hero svg {
+        height: 100%;
+    }
 }
 
 @media (max-width: 1224px) {
     .hero__contents--slogan {
         display: flex;
         flex-direction: column;
+    }
+    .hero__contents--slogan span {
+        margin-right: 0;
     }
 }
 
@@ -366,7 +389,7 @@ small {
     font-size: 24px;
     color: #FFFFFF;
     letter-spacing: 0;
-    line-height: 42px;
+    line-height: 30px;
     opacity: 0.9;
 }
 
@@ -463,7 +486,7 @@ small {
 }
 @media (max-width: 768px) {
     .cta__gears--bottom {
-        bottom: 40px;
+        bottom: 60px;
         right: 22px;
     }
     .cta__gears--top-right {
@@ -476,6 +499,10 @@ small {
 @media (max-width: 576px) {
     .cta__gears--top-left {
         left: -60px;
+    }
+    .cta__gears--bottom {
+        bottom: 90px;
+        right: 22px;
     }
 }
 
@@ -697,7 +724,9 @@ small {
     line-height: 25px;
     margin-top: 1rem;
 }
-
+.form .more-projects {
+    margin-top: -10px;
+}
 .form .more-icon img {
     margin-right: 1rem;
 }
@@ -883,6 +912,10 @@ small {
     font-size: 16pt;
 }
 
+#faq {
+    padding-bottom: 75px;
+}
+
 .faq {
     padding: 60px;
 }
@@ -891,6 +924,12 @@ small {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "PostGrotesk-Medium", sans-serif;
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: #314F7A;
+    letter-spacing: 0;
+    line-height: 31px;
 }
 
 @media (max-width: 1024px) {
