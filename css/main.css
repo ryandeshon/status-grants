@@ -391,6 +391,7 @@ small {
     letter-spacing: 0;
     line-height: 30px;
     opacity: 0.9;
+    margin-top: 6px;
 }
 
 .cta__contents--text {
