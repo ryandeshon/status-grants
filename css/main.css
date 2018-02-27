@@ -165,7 +165,6 @@ small {
 }
 .hero__contents--text {
     padding: 20px;
-    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -283,23 +282,24 @@ small {
 #Top-Left-Box {
     animation: fade-up-top-left 2s;
     animation-fill-mode: forwards;
+    animation-delay: 1s;
     opacity: 0;
 }
 #Top-Right-Box {
     animation: fade-up-top-right 2s;
-    animation-delay: .25s;
+    animation-delay: .75s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 #Bottom-Right-Box {
     animation: fade-up-bottom-right 2s;
-    animation-delay: .5s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 #arrow {
     animation: arrow 2s;
-    animation-delay: .75s;
+    animation-delay: 1.25s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
