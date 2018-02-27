@@ -280,25 +280,25 @@ small {
     }
 }
 #Top-Left-Box {
-    animation: fade-up-top-left 1s;
+    animation: fade-up-top-left 2s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 #Top-Right-Box {
-    animation: fade-up-top-right 1s;
-    animation-delay: 1s;
+    animation: fade-up-top-right 2s;
+    animation-delay: .25s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 #Bottom-Right-Box {
-    animation: fade-up-bottom-right 1s;
-    animation-delay: 2s;
+    animation: fade-up-bottom-right 2s;
+    animation-delay: .5s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 #arrow {
     animation: arrow 2s;
-    animation-delay: 3s;
+    animation-delay: .75s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
