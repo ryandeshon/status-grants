@@ -64,6 +64,7 @@ small {
 
 .navigation .navbar {
     transition: height 1s ease-in-out;
+    background-color: white;
 }
 .navigation .container {
     padding: 0;
@@ -476,7 +477,7 @@ small {
         bottom: 150px;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .cta__gears--bottom {
         bottom: 40px;
         right: 22px;
