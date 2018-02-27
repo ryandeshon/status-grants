@@ -164,7 +164,7 @@ small {
     padding-right: 40px;
 }
 .hero__contents--text {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
